@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>哎哟，不错哦</title>
+  
+  <subtitle>远走高飞</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-09-25T01:52:54.278Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>高哥哥</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>page</title>
+    <link href="http://yoursite.com/2017/09/25/page/"/>
+    <id>http://yoursite.com/2017/09/25/page/</id>
+    <published>2017-09-25T01:46:21.000Z</published>
+    <updated>2017-09-25T01:52:54.278Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script><script>AV.initialize("KJmqmqPCwQK38fVbTBVtPMuG", "8Y1GCzDtBKSkavgpReDjWiQB");</script> //需要写上leancloud的key<script type="text/javascript">  var time=0  var title=""  var url=""  var query = new AV.Query('Counter');//表名  query.notEqualTo('id',0); //id不为0的结果  query.descending('time'); //结果按阅读次数降序排序  query.limit(20);  //最终只返回10条结果  query.find().then(function (todo) {    for (var i=0;i<10;i++){      var result=todo[i].attributes;      time=result.time;  //阅读次数      title=result.title; //文章标题      url=result.url;     //文章url      var content="<p>"+"<font color='#0477ab'>"+"【阅读次数:"+time+"】"+"<a href='"+"http://thief.one"+url+"'>"+title+"</font>"+"</a>"+"</p>";      // document.write("<a href='"+"http://thief.one/"+url+"'>"+title+"</a>"+"    Readtimes:"+time+"<br>");      document.getElementById("heheda").innerHTML+=content    }  }, function (error) {    console.log("error");  });</script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;script src=&quot;https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;AV.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>曾经梦想仗剑走天涯，后来作业太多就没去!</title>
+    <link href="http://yoursite.com/2017/09/23/%E6%9B%BE%E7%BB%8F%E6%A2%A6%E6%83%B3%E4%BB%97%E5%89%91%E8%B5%B0%E5%A4%A9%E6%B6%AF%EF%BC%8C%E5%90%8E%E6%9D%A5%E4%BD%9C%E4%B8%9A%E5%A4%AA%E5%A4%9A%E5%B0%B1%E6%B2%A1%E5%8E%BB/"/>
+    <id>http://yoursite.com/2017/09/23/曾经梦想仗剑走天涯，后来作业太多就没去/</id>
+    <published>2017-09-23T07:28:49.000Z</published>
+    <updated>2017-09-23T08:52:12.540Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>我身骑白马，迎着光勇敢追，远走高飞，说走就走一回</p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=475277345&auto=false&height=66"></iframe>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;我身骑白马，迎着光勇敢追，远走高飞，说走就走一回&lt;/p&gt;
+&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; margin
+      
+    
+    </summary>
+    
+      <category term="歌" scheme="http://yoursite.com/categories/%E6%AD%8C/"/>
+    
+    
+      <category term="life" scheme="http://yoursite.com/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>给自己的歌</title>
+    <link href="http://yoursite.com/2017/09/23/%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9A%84%E6%AD%8C/"/>
+    <id>http://yoursite.com/2017/09/23/给自己的歌/</id>
+    <published>2017-09-23T04:54:04.000Z</published>
+    <updated>2017-09-23T08:53:48.220Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>想得却不可得 你奈人生何<br>该舍的舍不得 只顾着跟往事瞎扯<br>等你发现时间是贼了<br>它早已偷光你的选择<br>爱恋不过是一场高烧<br>思念是紧跟着的好不了的咳</p><p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=394618&auto=false&height=66"></iframe><br>是不能原谅却无法阻挡<br>恨意在夜里翻墙<br>是空空荡荡却嗡嗡作响<br>谁在你心里放冷枪<br>旧爱的誓言像极了一个巴掌<br>每当你记起一句就挨一个耳光<br>然后好几年都闻不得 问不得女人香<br>往事并不如烟 是的<br>在爱里念着也不算美德<br>可惜恋爱不像写歌<br>再认真也成不了风格<br>我问你见过思念放过谁呢<br>不管你是累犯或是从无前科<br>我认识的只有那合久的分了<br>没见过分久的合<br>岁月 你别催<br>该来的我不推 该还的还该给的我给<br>岁月 你别催<br>走远的我不追 我不过是想弄清原委<br>谁能告诉我 这是什么呢<br>她的爱在心里 埋葬了 抹平了 几年了<br>仍有余威<br>是不能原谅却无法阻挡<br>爱意在夜里翻墙<br>是空空荡荡却嗡嗡作响<br>谁在你心里放冷枪<br>旧爱的誓言像极了一个巴掌<br>每当你记起一句就挨一个耳光<br>然后好几年都闻不得 问不得女人香<br>然后好几年都闻不得 问不得女人香<br>想得却不可得 你奈人生何<br>想得却不可得 情爱里无智者</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;想得却不可得 你奈人生何&lt;br&gt;该舍的舍不得 只顾着跟往事瞎扯&lt;br&gt;等你发现时间是贼了&lt;br&gt;它早已偷光你的选择&lt;br&gt;爱恋不过是一场高烧&lt;br&gt;思念是紧跟着的好不了的咳&lt;
+      
+    
+    </summary>
+    
+      <category term="歌" scheme="http://yoursite.com/categories/%E6%AD%8C/"/>
+    
+    
+      <category term="life" scheme="http://yoursite.com/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>感觉自己是巨星</title>
+    <link href="http://yoursite.com/2017/09/23/%E6%84%9F%E8%A7%89%E8%87%AA%E5%B7%B1%E6%98%AF%E5%B7%A8%E6%98%9F/"/>
+    <id>http://yoursite.com/2017/09/23/感觉自己是巨星/</id>
+    <published>2017-09-23T03:11:40.000Z</published>
+    <updated>2017-09-23T09:13:35.083Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>有时候我感觉自己是一个巨星<br>每个人都爱着我有钱又有名<br>所以每当生活让我想死的时候<br>对自己说巨星只是在扮演平民<br>有时候我感觉自己是一个巨星<br>年轻貌美有才华用也用不尽<br>所以当我走到一筹莫展的时候<br>                <img class="photopic full-image" src="http://img1.kuwo.cn/star/starheads/240/80/56/3605461691.jpg"><br>只是巨星需要休息<br>巨星啊巨星我们爱你<br>少了你生活就不能继续<br>为了让粉丝们活下去<br>你要好好照顾自己<br>巨星啊巨星我们支持你<br>支持你做的所有决定<br>大胆做自己别犹豫<br>巨星永远有人气<br>有时候我感觉自己是一个巨星<br>每天各大时尚party出席个不停<br>所以当我偶尔觉得孤单的时候<br>离开人群假装很庆幸<br>巨星啊巨星我们爱你<br>少了你生活就不能继续<br>为了让粉丝们活下去<br>你要好好照顾自己<br>巨星啊巨星我们支持你<br>支持你做的所有决定<br>大胆做自己别犹豫<br>巨星永远有人气<br>希望你也感觉自己是一个巨星<br>这样活着也许就能有点乐趣<br>如果你个人没有很想当巨星<br>想当什么都可以</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;有时候我感觉自己是一个巨星&lt;br&gt;每个人都爱着我有钱又有名&lt;br&gt;所以每当生活让我想死的时候&lt;br&gt;对自己说巨星只是在扮演平民&lt;br&gt;有时候我感觉自己是一个巨星&lt;br&gt;年轻貌
+      
+    
+    </summary>
+    
+      <category term="歌" scheme="http://yoursite.com/categories/%E6%AD%8C/"/>
+    
+    
+      <category term="life" scheme="http://yoursite.com/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>套路</title>
+    <link href="http://yoursite.com/2017/09/23/%E5%A5%97%E8%B7%AF/"/>
+    <id>http://yoursite.com/2017/09/23/套路/</id>
+    <published>2017-09-23T03:06:54.000Z</published>
+    <updated>2017-09-25T02:40:34.732Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><blockquote><p>当你开始担心没法迈步<br>只好摆出无所谓的态度<br>金玉其外败絮其中<br>真正的霸气不用外露<br>更不用谁来帮我带路<br>哥们路一直在脚下踩<br>只要我想要的都会有<br>但是从来都不需要老爸买<br>All by myself<br>跟你不同<br>心甘情愿的当个蛀虫<br>我想靠自己的双手赚<br>哪怕有段时间特别穷<br>你说没钱就没朋友<br>那种朋友跟钱走<br>他们只会跟你蹭红酒<br>一旦出事没人会伸援手<br>我早看透<br>真的 homie 穷不走<br>不仅把钱要赚够<br>还要跟我 homie 同富有<br>所以说爱我的恨我的赖我的<br>蹭我的来继续都别停<br>在鱼龙混杂的社会里<br>有时候幽默的就像是卓别林<br>这个年代笑贫不笑娼<br>比较暴力比较黄<br>你只要房子不要窗<br>无神论者开教堂<br>你只想靠天靠地靠朋友<br>靠瞎猫碰上个死老鼠<br>真正牛逼的靠自己<br>别的都是纸老虎<br>都在玩套路<br>你不过就是挖个陷阱<br>小心的跳舞<br>我把我人生跳成电影<br>别再玩套路<br>你把你自己玩进陷阱<br>愉快的跳舞<br>不小心就把人生跳成电影<br>都在玩套路<br>你不过就是挖个陷阱<br>小心的跳舞<br>我把我人生跳成电影<br>别再玩套路<br>你把你自己玩进陷阱<br>愉快的跳舞<br>不小心就把人生跳成电影<br>于是被套路过的人<br>开始原样照搬<br>想要找寻靠山<br>全部都怕落单<br>也跟着玩起套路<br>但是就算你有了靠山<br>也没法告官<br>人际关系还得靠攀<br>明星靠玻尿酸<br>没人怕暴露<br>所以套路离我远一点<br>我比较危险<br>你的把戏会被拆穿<br>最多再给你个鬼脸<br>跟你相比我是个烂演员<br>除了想要赚点钱<br>坦白说我还想把腰杆挺直<br>再痛痛快快的玩几年<br>还记得那时候一无所有<br>常常靠借钱来应付生活<br>睡梦里问上帝还要多久<br>我才能够摆脱这样的生活<br>一直在思考要怎么行动<br>干脆让行动来帮我思考<br>先赚点零用<br>让自己吃饱<br>我发誓要让家人都为我自豪<br>他们看不看得惯<br>小爷都懒得管<br>背后的 bullshit 都随你便<br>地球还得转太多事等着办<br>只会看到更屌的 Jony J<br>所以别再胡说八道<br>在现实里没有人会为你拼<br>等我把想要的都拿到<br>再来写首励志的歌给你听<br>都在玩套路<br>你不过就是挖个陷阱<br>小心的跳舞<br>我把我人生跳成电影<br>别再玩套路<br>你把你自己玩进陷阱<br>愉快的跳舞<br>不小心就把人生跳成电影<br>都在玩套路<br>你不过就是挖个陷阱<br>小心的跳舞<br>我把我人生跳成电影<br>别再玩套路<br>你把你自己玩进陷阱<br>愉快的跳舞<br>不小心就把人生跳成电影</p><footer><strong>[Mr.Gao[</strong><cite>source]] [link] [source_link_title]</cite></footer></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;blockquote&gt;&lt;p&gt;当你开始担心没法迈步&lt;br&gt;只好摆出无所谓的态度&lt;br&gt;金玉其外败絮其中&lt;br&gt;真正的霸气不用外露&lt;br&gt;更不用谁来帮我带路&lt;br&gt;哥们路一直在脚下踩
+      
+    
+    </summary>
+    
+      <category term="歌" scheme="http://yoursite.com/categories/%E6%AD%8C/"/>
+    
+    
+      <category term="life 套路" scheme="http://yoursite.com/tags/life-%E5%A5%97%E8%B7%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>神啊，救救我吧</title>
+    <link href="http://yoursite.com/2017/09/23/%E7%A5%9E%E5%95%8A%EF%BC%8C%E6%95%91%E6%95%91%E6%88%91%E5%90%A7/"/>
+    <id>http://yoursite.com/2017/09/23/神啊，救救我吧/</id>
+    <published>2017-09-23T03:05:21.000Z</published>
+    <updated>2017-09-23T08:50:45.133Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><blockquote><p> 上帝会保佑我的爱情总会来的<br> 我在梦中一切都有<br> 可惜现实呀常常是相反的<br> 爱她的男人很多那我又算什么<br> 我在雨中喝着闷酒<br> 反正幸福呀对我是奢侈的<br> 心里太清楚了其实她不爱我<br> 奇怪地球上怎么会没有人看上我<br> 神啊救救我吧一把年纪了<br> 一个爱人都没有孤独是可怜的<br> 如果没爱过人生是黑白的<br> 神啊救救我吧一个人晃了</p><p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=64752&auto=false&height=66"></iframe><br> 半辈子了为什么我这样的男人<br> 哪就快要绝种她呢又在哪儿<br> 心里太清楚了其实她不爱我<br> 奇怪地球上怎么会没有人看上我<br> 神啊救救我吧一把年纪了<br> 一个爱人都没有孤独是可怜的<br> 如果没爱过人生是黑白的<br> 神啊救救我吧一个人晃了<br> 半辈子了为什么我这样的男人<br> 哪就快要绝种她呢又在哪儿 oh<br> 神啊救救我吧一把年纪了<br> 一个爱人都没有孤独是可怜的<br> 如果没爱过人生是黑白的<br> 神啊救救我吧一个人晃了<br> 半辈子了为什么我这样的男人哪</p><footer><strong>[Mr.Gao[</strong><cite>source]] [link] [source_link_title]</cite></footer></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;blockquote&gt;&lt;p&gt; 上帝会保佑我的爱情总会来的&lt;br&gt; 我在梦中一切都有&lt;br&gt; 可惜现实呀常常是相反的&lt;br&gt; 爱她的男人很多那我又算什么&lt;br&gt; 我在雨中喝着闷酒&lt;
+      
+    
+    </summary>
+    
+      <category term="歌" scheme="http://yoursite.com/categories/%E6%AD%8C/"/>
+    
+    
+      <category term="jony j" scheme="http://yoursite.com/tags/jony-j/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nice</title>
+    <link href="http://yoursite.com/2017/09/23/nice/"/>
+    <id>http://yoursite.com/2017/09/23/nice/</id>
+    <published>2017-09-23T02:44:43.000Z</published>
+    <updated>2017-09-23T05:19:07.319Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><blockquote class="blockquote-center">优秀的人，不是不合群，而是他们合群的人里面没有你</blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;优秀的人，不是不合群，而是他们合群的人里面没有你&lt;/blockquote&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="life" scheme="http://yoursite.com/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>巨星不易</title>
+    <link href="http://yoursite.com/2017/09/23/%E5%B7%A8%E6%98%9F%E4%B8%8D%E6%98%93/"/>
+    <id>http://yoursite.com/2017/09/23/巨星不易/</id>
+    <published>2017-09-23T02:39:20.000Z</published>
+    <updated>2017-09-23T03:11:09.449Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><div class="RichContent-inner"><br><span class="RichText CopyrightRichText-richText" itemprop="text"><br><p>像我这样的人<br>像你一样的人<br>这世界上有多少人<br>时而迷惘 时而伤神</p><p>小时候听人吹口哨 总认为那是一个人无能却装作很厉害的样子的行径<br>而今 从《消愁》到《像我这样的人》一声声哼唱出的口哨的旋律<br>动听这样的词汇已然无法将其形容 </p><p>那一声口哨响起的时候 <br>泪湿了眼眶</p>我们都是普通人 <br>所以我们庸俗 懦弱 孤单 碌碌无为<br>可我们是普通人<br>所以我们单纯 孤勇 热烈 不甘平凡 奋不顾身</span><!-- react-empty: 3169 --></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;div class=&quot;RichContent-inner&quot;&gt;&lt;br&gt;&lt;span class=&quot;RichText CopyrightRichText-richText&quot; itemp
+      
+    
+    </summary>
+    
+      <category term="巨星" scheme="http://yoursite.com/categories/%E5%B7%A8%E6%98%9F/"/>
+    
+    
+      <category term="歌" scheme="http://yoursite.com/tags/%E6%AD%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端</title>
+    <link href="http://yoursite.com/2017/09/23/%E5%89%8D%E7%AB%AF/"/>
+    <id>http://yoursite.com/2017/09/23/前端/</id>
+    <published>2017-09-23T02:35:52.452Z</published>
+    <updated>2017-09-25T02:40:19.428Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>github pages+hexo搭建博客</title>
+    <link href="http://yoursite.com/2017/09/20/github-pages-hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2017/09/20/github-pages-hexo搭建博客/</id>
+    <published>2017-09-20T02:39:20.000Z</published>
+    <updated>2017-09-25T02:36:41.205Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>Web 前端爱好者。写博客的好处，不是为了写而写，而是一个记录思想的过程。不要考虑它能带给你什么，而是你自己从中收获了什么。<br>最近刚好有空，于是就参照网上的各种教程，搭建了一个博客。现在把 Hexo + GitHub Pages 搭建博客的完整过程记录下来：</p><p><strong>大概流程</strong>：<br><br>1. 搭建 Node.js 环境<br><br>2. 搭建 Git 环境<br><br>3. GitHub 注册和配置<br><br>4. 安装配置 Hexo<br><br>5. 关联 Hexo 与 GitHub Pages<br><br>6. GitHub Pages 地址解析到个人域名<br><br>7. Hexo 的常用操作<br><br>8. 结束语</p><br><h2 id="nodejs"><a class="headeranchor-link" name="user-content-nodejs" href="#nodejs"></a>搭建 Node.js 环境</h2><br><blockquote><br><p>为什么要搭建 Node.js 环境？ - 因为 Hexo 博客系统是基于 Node.js 编写的</p><p></p></blockquote><p></p><p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境，可以在非浏览器环境下，解释运行 JS 代码。</p><br><p>在 Node.js 官网：<a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a> 下载安装包 <code>v6.10.3 LTS</code></p><br><p>保持默认设置即可，一路Next，安装很快就结束了。</p><br><p>然后打开命令提示符，输入 <code>node -v</code>、<code>npm -v</code>，出现版本号则说明 Node.js 环境配置成功，第一步完成！！！</p><br><p><img src="http://oph264zoo.bkt.clouddn.com/17-5-28/25738843.jpg" alt=""></p><br><h2 id="git"><a class="headeranchor-link" name="user-content-git" href="#git"></a>搭建 Git 环境</h2><br><blockquote><br><p>为什么要搭建 Git 环境？ - 因为需要把本地的网页和文章等提交到 GitHub 上。</p><p></p></blockquote><p></p><p>Git 是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。</p><br><p>在 Git 官网：<a href="https://git-scm.com/" target="_blank" rel="external">https://git-scm.com/</a> 下载安装包 <code>Git-2.13.0-64-bit.exe</code></p><br><p><img src="http://oph264zoo.bkt.clouddn.com/17-5-28/62582265.jpg" alt=""></p><br><p>桌面右键，打开 <code>Git Bush Here</code>，输入 <code>git –version</code>，出现版本号则说明 Git 环境配置成功，第二步完成！！！</p><br><p><img src="http://oph264zoo.bkt.clouddn.com/17-5-28/13485948.jpg" alt=""></p><br><h2 id="github"><a class="headeranchor-link" name="user-content-github" href="#github"></a>GitHub 注册和配置</h2><br><p>GitHub 是一个代码托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub。</p><br><p>Github注册：<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a></p><br><p><iframe id="iframe_0.5607328742099007" src="data:text/html;charset=utf8,%3Cstyle%3Ebody%7Bmargin:0;padding:0%7D%3C/style%3E%3Cimg%20id=%22img%22%20src=%22http://img.mukewang.com/57eea87a0001c62213450582.png?_=6927340%22%20style=%22border:none;max-width:701px%22%3E%3Cscript%3Ewindow.onload%20=%20function%20()%20%7Bvar%20img%20=%20document.getElementById('img');%20window.parent.postMessage(%7BiframeId:'iframe_0.5607328742099007',width:img.width,height:img.height%7D,%20'http://www.cnblogs.com');%7D%3C/script%3E" style="border: none; width: 701px; height: 303px;" frameborder="0" scrolling="no"></iframe></p><br><p>创建仓库：Repository name 使用自己的用户名，仓库名规则：</p><br><p><strong>注意</strong>：<code>yourname</code> 必须是你的用户名。</p><br><pre><code>yourname/yourname.github.io<br></code></pre><br><p><img src="http://oph264zoo.bkt.clouddn.com/17-5-28/42622869.jpg" alt=""></p><br><p>访问 yourname.github.io，如果可以正常访问，那么 Github 的配置已经结束了。</p><br><p>到此搭建 Hexo 博客的相关环境配置已经完成，下面开始讲解 Hexo 的相关操作</p><br><h2 id="hexo"><a class="headeranchor-link" name="user-content-hexo" href="#hexo"></a>安装配置 Hexo</h2><br><p>Hexo 是一个快速、简洁且高效的博客框架，使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p><br><p>强烈建议你花20分钟区读一读 Hexo 的官方文档：<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">https://hexo.io/zh-cn/</a></p><br><p><img src="http://oph264zoo.bkt.clouddn.com/17-5-28/49821520.jpg" alt=""></p><br><p><strong>使用 npm 安装 Hexo</strong>：在命令行中输入</p><br><pre><code>npm install hexo-cli -g<br></code></pre><br><p>然后你将会看到下图，可能你会看到一个<code>WARN</code>，但是不用担心，这不会影响你的正常使用。</p><br><p><img src="http://oph264zoo.bkt.clouddn.com/17-5-28/41219383.jpg" alt=""></p><br><p>查看Hexo的版本</p><br><pre><code>hexo version<br></code></pre><br><p><img src="http://oph264zoo.bkt.clouddn.com/17-5-29/81453389.jpg" alt=""></p><br><p>安装 Hexo 完成后，请执行下列命令来初始化 Hexo，用户名改成你的，Hexo 将会在指定文件夹中新建所需要的文件。</p><br><pre><code>hexo init bxm0927.github.io<br><br>cd bxm0927.github.io<br><br>npm install<br></code></pre><br><p>新建完成后，指定文件夹的目录如下：</p><br><pre><code>.<br>├── .deploy         #需要部署的文件<br>├── node_modules    #Hexo插件<br>├── public          #生成的静态网页文件<br>├── scaffolds       #模板<br>├── source          #博客正文和其他源文件，404、favicon、CNAME 都应该放在这里<br>| ├── _drafts       #草稿<br>| └── _posts        #文章<br>├── themes          #主题<br>├── _config.yml     #全局配置文件<br>└── package.json    #npm 依赖等<br></code></pre><br><p><strong>运行本地 Hexo 服务</strong></p><br><pre><code>hexo server<br>或者<br>hexo s<br></code></pre><br><p>您的网站会在 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000</a> 下启动。如果 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000</a> 能够正常访问，则说明 Hexo 本地博客已经搭建起来了，只是本地哦，别人看不到的。下面，我们要部署到Github。</p><br><p><img src="http://oph264zoo.bkt.clouddn.com/17-5-28/34921926.jpg" alt=""></p><br><p><strong>注意1</strong>：执行hexo server提示找不到该指令</p><br><p>解决办法：在Hexo 3.0 后server被单独出来了，需要安装server，安装的命令如下：</p><br><pre><code>sudo npm install hexo-server<br>或者<br>npm install hexo -server –save<br></code></pre><br><h2 id="hexo-github-pages"><a class="headeranchor-link" name="user-content-hexo-github-pages" href="#hexo-github-pages"></a>关联 Hexo 与 GitHub Pages</h2><br><p>我们如何让本地git项目与远程的github建立联系呢？用 SSH keys</p><br><p><strong>生成SSH keys</strong></p><br><p>输入你自己的邮箱地址</p><br><pre><code>ssh-keygen -t rsa -C “80583600@qq.com”<br></code></pre><br><p>在回车中会提示你输入一个密码，这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入，我们按回车不设置密码。</p><br><p><strong>添加 SSH Key 到 GitHub</strong></p><br><p>打开 <code>C:\Users\bxm09.ssh\id_rsa.pub</code>，此文件里面内容为刚才生成的密钥，准确的复制这个文件的内容，粘贴到 <a href="https://github.com/settings/ssh" target="_blank" rel="external">https://github.com/settings/ssh</a> 的 <code>new SSH key</code> 中</p><br><p><strong>测试</strong></p><br><p>可以输入下面的命令，看看设置是否成功，git@github.com的部分不要修改：</p><br><pre><code>ssh -T git@github.com<br></code></pre><br><p>如果是下面的反馈：</p><br><blockquote><br><p>The authenticity of host ‘github.com (207.97.227.239)’ can’t be established.<br><br>RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.<br><br>Are you sure you want to continue connecting (yes/no)?</p><p></p></blockquote><p></p><p>不要紧张，输入yes就好，然后会看到：</p><br><pre><code>Hi aierui! You’ve successfully authenticated, but GitHub does not provide shell access.<br></code></pre><br><p><strong>配置Git个人信息</strong></p><br><p>现在你已经可以通过 SSH 链接到 GitHub 了，还有一些个人信息需要完善的。<br><br>Git 会根据用户的名字和邮箱来记录提交。GitHub 也是用这些信息来做权限的处理，输入下面的代码进行个人信息的设置，把名称和邮箱替换成你自己的。</p><br><pre><code>git config –global user.name “bxm0927”<br>git config –global user.email “80583600@qq.com”<br></code></pre><br><p><strong>配置 Deployment</strong></p><br><p>在<code>_config.yml</code>文件中，找到<code>Deployment</code>，然后按照如下修改，用户名改成你的：</p><br><p>需要注意的是：冒号后面记得空一格！</p><br><pre><code># Deployment<br>## Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">https://hexo.io/docs/deployment.html</a><br>deploy:<br>  type: git<br>  repo: git@github.com:bxm0927/bxm0927.github.io.git<br>  branch: master<br></code></pre><br><p><strong>本地文件提交到 GitHub Pages</strong></p><br><pre><code>// 删除旧的 public 文件<br>hexo clean<br><br>// 生成新的 public 文件<br>hexo generate<br>或者<br>hexo g<br><br>// 开始部署<br>hexo deploye<br>或者<br>hexo d<br></code></pre><br><p>在浏览器中输入 <a href="https://bxm0927.github.io/" target="_blank" rel="external">https://bxm0927.github.io</a> （用户名改成你的）看到了 Hexo 与 GitHub Pages 已经成功关联了，哇哇哇哇哇哇，开心死你了，不要忘了回来给我点赞哟 ~</p><br><p><strong>注意1</strong>：若上面操作失败，则需要提前安装一个扩展：</p><br><pre><code>npm install hexo-deployer-git –save<br></code></pre><br><p><strong>注意2</strong>：如果在执行 <code>hexo d</code> 后,出现 <code>error deployer not found:github</code> 的错误（如下），则是因为没有设置好 public key 所致，重新详细设置即可。</p><br><blockquote><br><p>Permission denied (publickey).<br><br>fatal: Could not read from remote repository.<br><br>Please make sure you have the correct access rights<br><br>and the repository exists.</p><p></p></blockquote><p></p><p><strong>注意3</strong>：怎么避免 .md 文件被解析？</p><br><p>Hexo原理就是hexo在执行hexo generate时会在本地先把博客生成的一套静态站点放到public文件夹中，在执行hexo deploy时将其复制到.deploy文件夹中。Github的版本库通常建议同时附上README.md说明文件，但是hexo默认情况下会把所有md文件解析成html文件，所以即使你在线生成了 README. md，它也会在你下一次部署时被删去。怎么解决呢？</p><br><p>在执行hexo deploy前把在本地写好的README.md文件复制到.deploy文件夹中，再去执行hexo deploy。</p><br><h2 id="github-pages"><a class="headeranchor-link" name="user-content-github-pages" href="#github-pages"></a>GitHub Pages 地址解析到个人域名</h2><br><blockquote><br><p>Github Pages 是面向用户、组织和项目开放的公共静态页面搭建托管服 务，站点可以被免费托管在 Github 上，你可以选择使用 Github Pages 默 认提供的域名 github.io 或者自定义域名来发布站点。</p><p></p></blockquote><p></p><p>看着博客的域名是二级域名，总有一种寄人篱下的感觉，为了让这个小窝看起来更加正式，我在阿里云上买了一个域名，打算将博客绑定自己的域名。</p><br><p>进行该绑定过程，其实就是一个重定向的过程。</p><br><p>在 GitHub 仓库的根目录下建立一个 <code>CNAME</code> 的文本文件(注意：没有扩展名)，文件里面只能输入一个你的域名，不能加<code>http://</code></p><br><pre><code>www.lovebxm.com<br></code></pre><br><p>注意：CNAME 一定是在你 Github 项目的 master 根目录下</p><br><p>进入<a href="https://dc.aliyun.com/tcparse/dns.htm" target="_blank" rel="external">阿里云域名解析地</a>址，添加解析：</p><br><ol><br><li>记录类型选择<code>CNAME</code></li><br><li>主机记录填<code>www</code></li><br><li>解析线路选择<code>默认</code></li><br><li>记录值填<code>yourname.github.io</code></li><br><li>TTL值为<code>10</code>分钟</li><br><li>再添加一个解析，记录类型<code>A</code></li><br><li>主机记录填<code>www</code></li><br><li>解析线路选择<code>默认</code></li><br><li>记录值填你GitHub 的ip地址（在cmd中ping：）</li><br></ol><br><pre><code>ping bxm0927.github.com<br></code></pre><br><p><img src="http://oph264zoo.bkt.clouddn.com/17-5-29/79989003.jpg" alt=""></p><br><p>点击保存，等 1 分钟，访问下你自己的域名，一切就ok了。</p><br><p>域名绑定成功，域名解析成功，因此你在浏览中输入 <a href="http://www.lovebxm.com/" target="_blank" rel="external">www.lovebxm.com</a>，或 lovebxm.com 就可以访问到博客了，输入 bxm0927.github.io 会重定向到 <a href="http://www.lovebxm.com/" target="_blank" rel="external">www.lovebxm.com</a>。过程：www 的方式，会先解析成 <a href="http://xxxx.github.io/" target="_blank" rel="external">http://xxxx.github.io</a>，然后根据 CNAME 再变成 www</p><br><p><strong>注意</strong>：CNAME文件在下次 <code>hexo deploy</code>的时候就消失了，需要重新创建，这样就很繁琐</p><br><p>方法一：每次 <code>hexo d</code> 之后，就去 GitHub 仓库根目录新建 CNAME文件</p><br><p>方法二：在 <code>hexo g</code> 之后， <code>hexo d</code> 之前，把CNAME文件复制到 “\public” 目录下面，里面写入你要绑定的域名。</p><br><p>方法三（推荐）：将需要上传至github的内容放在source文件夹，例如CNAME、favicon.ico、images等，这样在 hexo d 之后就不会被删除了。</p><br><p>方法四：通过安装插件实现永久保留</p><br><pre><code>$ npm install hexo-generator-cname –save<br></code></pre><br><p>之后在_config.yml中添加一条</p><br><pre><code>plugins:<br>- hexo-generator-cname<br></code></pre><br><p>需要注意的是：如果是在github上建立的CNAME文件，需要先clone到本地，然后安装插件，在deploy上去即可。CNAME只允许一个域名地址。</p><br><p><strong>注意1</strong>：每次生成的 CNAME 都是 yoursite.com 怎么解决？</p><br><p>修改 _config.yml</p><br><pre><code>url: <a href="http://www.lovebxm.com" target="_blank" rel="external">http://www.lovebxm.com</a><br>root: /<br>permalink: :year/:month/:day/:title/<br>permalink_defaults:<br></code></pre><br><h2 id="hexo_1"><a class="headeranchor-link" name="user-content-hexo_1" href="#hexo_1"></a>Hexo 的常用操作</h2><br><h3 id="_1"><a class="headeranchor-link" name="user-content-_1" href="#_1"></a>发表一篇文章</h3><br><pre><code>hexo new “文章标题”<br><br>D:\GitHub\Hexo\test&gt;hexo new “文章标题”<br>INFO  Created: D:\GitHub\Hexo\test\source_posts\文章标题.md<br></code></pre><br><p>在本地博客文件夹 <code>source_posts</code> 文件夹下看到我们新建的 markdown 文件。</p><br><p>当然，我们也可以手动添加Markdown文件在source-&gt;_deploy文件夹下，其效果同样可以媲美<code>hexo new</code></p><br><p>文章编辑好之后，运行生成、部署命令：</p><br><pre><code>hexo clean<br><br>hexo g<br><br>hexo d<br></code></pre><br><p>当然你也可以执行下面的命令，相当于上面两条命令的效果</p><br><pre><code>hexo clean<br><br>hexo d -g<br></code></pre><br><h3 id="_2"><a class="headeranchor-link" name="user-content-_2" href="#_2"></a>新建一个自定义页面</h3><br><pre><code>hexo new page folder<br></code></pre><br><h3 id="_3"><a class="headeranchor-link" name="user-content-_3" href="#_3"></a>文章如何添加多个标签</h3><br><p>有两种多标签格式</p><br><pre><code>tags: [a, b, c]<br>或<br>tags:<br>  - a<br>  - b<br>  - c<br></code></pre><br><h3 id="_4"><a class="headeranchor-link" name="user-content-_4" href="#_4"></a>显示部分文章内容</h3><br><p>如果在博客文章列表中，不想全文显示，可以增加 <code>&lt;!– more –&gt;</code>, 后面的内容就不会显示在列表。</p><br><pre><code>&lt;!–more–&gt;<br></code></pre><br><h3 id="_5"><a class="headeranchor-link" name="user-content-_5" href="#_5"></a>更改主题</h3><br><p>官方主题库：<a href="https://hexo.io/themes/" target="_blank" rel="external">https://hexo.io/themes/</a></p><br><p>Hexo主题非常，推荐使用 <code>Next</code> 为主题，请阅读 Next 的官方文档（ <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">http://theme-next.iissnan.com/</a> ），5 分钟快速安装。</p><br><p>再提示一点，大家可以hexo主题修改一步就hexo s看下变化，初次接触对参数不清楚。只有hexo s后在可以在本地浏览到效果，Ctrl+C 停止服务器。</p><br><h3 id="_6"><a class="headeranchor-link" name="user-content-_6" href="#_6"></a>添加插件</h3><br><p>添加 sitemap 和 feed 插件</p><br><p>切换到你本地的 hexo 目 CIA ，在命令行窗口，输入以下命令</p><br><pre><code>npm install hexo-generator-feed -save<br>npm install hexo-generator-sitemap -save<br></code></pre><br><p>修改 <code>_config.yml</code>，增加以下内容</p><br><pre><code># Extensions<br>Plugins:<br>- hexo-generator-feed<br>- hexo-generator-sitemap<br>#Feed Atom<br>feed:<br>  type: atom<br>  path: atom.xml<br>  limit: 20<br>#sitemap<br>sitemap:<br>  path: sitemap.xml<br></code></pre><br><p>再执行以下命令，部署服务端</p><br><pre><code>hexo d -g<br></code></pre><br><p>配完之后，就可以访问 <a href="https://bxm0927.github.io/atom.xml" target="_blank" rel="external">https://bxm0927.github.io/atom.xml</a> 和 <a href="https://bxm0927.github.io/sitemap.xml" target="_blank" rel="external">https://bxm0927.github.io/sitemap.xml</a> ，发现这两个文件已经成功生成了。</p><br><h3 id="404"><a class="headeranchor-link" name="user-content-404" href="#404"></a>添加 404 页面</h3><br><p>GitHub Pages 自定义404页面非常容易，直接在根目录下创建自己的404.html就可以。但是自定义404页面仅对绑定顶级域名的项目才起作用，GitHub默认分配的二级域名是不起作用的，使用hexo server在本机调试也是不起作用的。</p><br><p><img src="http://oph264zoo.bkt.clouddn.com/17-5-29/38118493.jpg" alt=""></p><br><p>其实，404页面可以做更多有意义的事，来做个404公益项目吧。</p><br><p>推荐使用腾讯公益404 <a href="http://www.qq.com/404/" target="_blank" rel="external">http://www.qq.com/404/</a> ：</p><br><pre><code>&lt;script type=”text/javascript”<br>        src=”//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js”<br>        charset=”utf-8”<br>        homePageUrl=”<a href="http://www.lovebxm.com/" target="_blank" rel="external">http://www.lovebxm.com/</a>“<br>        homePageName=”回到我的主页”&gt;<br>&lt;/script&gt;<br></code></pre><br><p>复制上面代码，贴粘到目录下新建的404.html即可！</p><br><h3 id="pc"><a class="headeranchor-link" name="user-content-pc" href="#pc"></a>多PC同步管理博客</h3><br><p>很多人可能家里一台笔记本，公司一个台式机，想两个同时管理博客，同时达到备份的博客主题、文章、配置的目的。下面就介绍一下用github来备份博客并同步博客。</p><br><ol><br><li>A电脑备份博客内容到github</li><br></ol><br><p>配置.gitignore文件。进入博客目录文件夹下，找到此文件，用sublime text 打开，在最后增加两行内容/.deploy_git和/public</p><br><ol><br><li>初始化仓库。</li><br></ol><br><p>在博客根目录下，在git bash下依次执行git init和git remote add origin 为远程仓库地址。</p><br><ol><br><li>同步到远程仓库。</li><br></ol><br><p>gitbash下依次执行以下命令</p><br><pre><code>git add . #添加目录下所有文件<br><br>git commit -m “更新说明” #提交并添加更新说明<br><br>git push -u origin master #推送更新到远程仓库<br></code></pre><br><ol><br><li>B电脑拉下远程仓库文件</li><br></ol><br><p>在B电脑上同样先安装好node、git、ssh、hexo，然后建好hexo文件夹，安装好插件，（然后选做：将备份到远程仓库的文件及文件夹删除），然后执行以下命令：</p><br><pre><code>git init<br><br>git remote add origin &lt;server&gt;<br><br>git fetch –all<br><br>git reset –hard origin/master<br></code></pre><br><ol><br><li>发布博客后同步</li><br></ol><br><p>在B电脑发布完博客之后，记得将博客备份同步到远程仓库<br><br>执行以下命令：</p><br><pre><code>git add .<br><br>#可以用git master 查看更改内容<br><br>git commit -m “更新信息”<br><br>git push -u origin master  #以后每次提交可以直接git push<br></code></pre><br><p>平时同步管理<br><br>每次想写博客时，先执行：git pull进行同步更新。发布完文章后同样按照上面的 发布博客后同步 同步到远程仓库。</p><br><h3 id="_7"><a class="headeranchor-link" name="user-content-_7" href="#_7"></a>中文乱码</h3><br><p>在 md 文件中写中文内容，发布出来后为乱码，原因是 md 的编码不对，将 md 文件另存为<code>UTF-8</code>编码的文件即可解决问题。</p><br><h2 id="_8"><a class="headeranchor-link" name="user-content-_8" href="#_8"></a>结束语</h2><br><p>建站的系统有很多，如：<br><br>- <a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo + GitHub Pages</a><br><br>- <a href="http://jekyll.com.cn/" target="_blank" rel="external">Jekyll + GitHub Pages</a><br><br>- <a href="https://cn.wordpress.org/" target="_blank" rel="external">WordPress + 服务器 + 域名</a><br><br>- <a href="http://www.dedecms.com/" target="_blank" rel="external">DeDeCMS + 服务器 + 域名</a><br><br>- …</p><br><p>使用 Hexo + GitHub Pages 建站，有优点也有缺点：<br><br>- GitHub Pages 不支持数据库管理，所以你只能做静态页面的博客，不能像其他博客（如 WordPress）那样通过数据库管理自己的博客内容。<br><br>- 但是，GitHub Pages 无需购置服务器，免服务器费的同时还能做负载均衡，github pages有300M免费空间。<br><br>- 个人博客真的有必要用数据库吗？答案是否定的。博客静态化，评论记录使用第三方的 <a href="https://gentie.163.com/info.html" target="_blank" rel="external">网易云跟帖</a>就可以了。静态的博客更有利于搜索引擎蜘蛛爬取，轻量化的感觉真的很好。<br><br>- 通过 Hexo 你可以轻松地使用 Markdown 编写文章，非常符合我的口味。Markdown 真的是专门针对程序员开发的语言啊，现在感觉没有 Markdown什么都不想写。什么富文本编辑器，什么word，太麻烦了！而且样式都好丑！效率太低！</p><br><p>推荐几个很好用的在线 Markdown 编辑器：<br><br>- 作业部落：<a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="external">https://www.zybuluo.com/mdeditor</a><br><br>- 马克飞象：<a href="https://maxiang.io/" target="_blank" rel="external">https://maxiang.io</a></p><br><p>推荐图床：<br><br>- <a href="https://jiantuku.com/#/" target="_blank" rel="external">极简图床 + chrome 插件 + 七牛空间</a>，七牛云储存提供10G的免费空间,以及每月10G的流量，存放个人博客外链图片最好不过了，七牛云储存还有各种图形处理功能、缩略图、视频存放速度也给力。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;Web 前端爱好者。写博客的好处，不是为了写而写，而是一个记录思想的过程。不要考虑它能带给你什么，而是你自己从中收获了什么。&lt;br&gt;最近刚好有空，于是就参照网上的各种教程，搭
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+</feed>
