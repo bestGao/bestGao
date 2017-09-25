@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-09-25T01:52:54.278Z</updated>
+  <updated>2017-09-23T08:52:12.540Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,28 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>page</title>
-    <link href="http://yoursite.com/2017/09/25/page/"/>
-    <id>http://yoursite.com/2017/09/25/page/</id>
-    <published>2017-09-25T01:46:21.000Z</published>
-    <updated>2017-09-25T01:52:54.278Z</updated>
-    
-    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script><script>AV.initialize("KJmqmqPCwQK38fVbTBVtPMuG", "8Y1GCzDtBKSkavgpReDjWiQB");</script> //需要写上leancloud的key<script type="text/javascript">  var time=0  var title=""  var url=""  var query = new AV.Query('Counter');//表名  query.notEqualTo('id',0); //id不为0的结果  query.descending('time'); //结果按阅读次数降序排序  query.limit(20);  //最终只返回10条结果  query.find().then(function (todo) {    for (var i=0;i<10;i++){      var result=todo[i].attributes;      time=result.time;  //阅读次数      title=result.title; //文章标题      url=result.url;     //文章url      var content="<p>"+"<font color='#0477ab'>"+"【阅读次数:"+time+"】"+"<a href='"+"http://thief.one"+url+"'>"+title+"</font>"+"</a>"+"</p>";      // document.write("<a href='"+"http://thief.one/"+url+"'>"+title+"</a>"+"    Readtimes:"+time+"<br>");      document.getElementById("heheda").innerHTML+=content    }  }, function (error) {    console.log("error");  });</script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;script src=&quot;https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;AV.
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>曾经梦想仗剑走天涯，后来作业太多就没去!</title>
@@ -53,31 +31,6 @@
       
         &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;我身骑白马，迎着光勇敢追，远走高飞，说走就走一回&lt;/p&gt;
 &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; margin
-      
-    
-    </summary>
-    
-      <category term="歌" scheme="http://yoursite.com/categories/%E6%AD%8C/"/>
-    
-    
-      <category term="life" scheme="http://yoursite.com/tags/life/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>给自己的歌</title>
-    <link href="http://yoursite.com/2017/09/23/%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9A%84%E6%AD%8C/"/>
-    <id>http://yoursite.com/2017/09/23/给自己的歌/</id>
-    <published>2017-09-23T04:54:04.000Z</published>
-    <updated>2017-09-23T08:53:48.220Z</updated>
-    
-    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>想得却不可得 你奈人生何<br>该舍的舍不得 只顾着跟往事瞎扯<br>等你发现时间是贼了<br>它早已偷光你的选择<br>爱恋不过是一场高烧<br>思念是紧跟着的好不了的咳</p><p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=394618&auto=false&height=66"></iframe><br>是不能原谅却无法阻挡<br>恨意在夜里翻墙<br>是空空荡荡却嗡嗡作响<br>谁在你心里放冷枪<br>旧爱的誓言像极了一个巴掌<br>每当你记起一句就挨一个耳光<br>然后好几年都闻不得 问不得女人香<br>往事并不如烟 是的<br>在爱里念着也不算美德<br>可惜恋爱不像写歌<br>再认真也成不了风格<br>我问你见过思念放过谁呢<br>不管你是累犯或是从无前科<br>我认识的只有那合久的分了<br>没见过分久的合<br>岁月 你别催<br>该来的我不推 该还的还该给的我给<br>岁月 你别催<br>走远的我不追 我不过是想弄清原委<br>谁能告诉我 这是什么呢<br>她的爱在心里 埋葬了 抹平了 几年了<br>仍有余威<br>是不能原谅却无法阻挡<br>爱意在夜里翻墙<br>是空空荡荡却嗡嗡作响<br>谁在你心里放冷枪<br>旧爱的誓言像极了一个巴掌<br>每当你记起一句就挨一个耳光<br>然后好几年都闻不得 问不得女人香<br>然后好几年都闻不得 问不得女人香<br>想得却不可得 你奈人生何<br>想得却不可得 情爱里无智者</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;script src=&quot;\assets\js\APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;想得却不可得 你奈人生何&lt;br&gt;该舍的舍不得 只顾着跟往事瞎扯&lt;br&gt;等你发现时间是贼了&lt;br&gt;它早已偷光你的选择&lt;br&gt;爱恋不过是一场高烧&lt;br&gt;思念是紧跟着的好不了的咳&lt;
       
     
     </summary>
