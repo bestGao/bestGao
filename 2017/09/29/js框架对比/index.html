@@ -98,7 +98,7 @@
 <meta property="og:description" content="谢邀，也感谢你对 Vue 的欣赏。首先，其实 Vue 也完全可以全量赋值的，唯一需要的小优化就是给 v-repeat 列表一个 track-by 属性，提示一下如何判断两个对象是否是同一份数据。如果是没有复杂交互的列表，可以直接 track-by=”$index” 原地复用 DOM 元素。合理使用 track-by 的情况下，Vue 甚至可以比 React 更快（这里渲染的是 100 * 5 的">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://pic4.zhimg.com/6af17bf9a1a6eadb50d5545313c1db77_b.png">
-<meta property="og:updated_time" content="2017-09-29T03:12:29.283Z">
+<meta property="og:updated_time" content="2017-09-29T05:36:09.361Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js框架对比">
 <meta name="twitter:description" content="谢邀，也感谢你对 Vue 的欣赏。首先，其实 Vue 也完全可以全量赋值的，唯一需要的小优化就是给 v-repeat 列表一个 track-by 属性，提示一下如何判断两个对象是否是同一份数据。如果是没有复杂交互的列表，可以直接 track-by=”$index” 原地复用 DOM 元素。合理使用 track-by 的情况下，Vue 甚至可以比 React 更快（这里渲染的是 100 * 5 的">
@@ -416,7 +416,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-09-29T11:12:29+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-09-29T13:36:09+08:00">
                 2017-09-29
               </time>
             
@@ -525,7 +525,7 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><div>谢邀，也感谢你对 Vue 的欣赏。<br><br>首先，其实 Vue 也完全可以全量赋值的，唯一需要的小优化就是给 v-repeat 列表一个 track-by 属性，提示一下如何判断两个对象是否是同一份数据。如果是没有复杂交互的列表，可以直接 track-by=”$index” 原地复用 DOM 元素。<br><br>合理使用 track-by 的情况下，Vue 甚至可以比 React 更快（这里渲染的是 100 * 5 的数据表，每一帧都是全量新数据赋值）：<br><a href="//link.zhihu.com/?target=http%3A//vuejs.github.io/js-repaint-perfs/vue/" class=" wrap external" target="_blank" rel="nofollow noreferrer">dbmon (Vue)<i class="icon-external"></i></a><br><a href="//link.zhihu.com/?target=http%3A//vuejs.github.io/js-repaint-perfs/react/" class=" wrap external" target="_blank" rel="nofollow noreferrer">dbmon (react)<i class="icon-external"></i></a><br><br>在超大量数据的首屏渲染速度上，React 有一定优势，因为 Vue 的渲染机制启动时候要做的工作比较多，而且 React 支持服务端渲染。<br><br>需要指出的一点：React 的 Virtual DOM 也不是不需要优化的。复杂的应用里你有两个选择 1. 手动添加 shouldComponentUpdate 来避免不需要的 vdom re-render；2. Components 尽可能都用 pureRenderMixin，然后采用 Flux 结构 + Immutable.js。其实也不是那么简单的。相比之下，Vue 由于采用依赖追踪，默认就是优化状态：你动了多少数据，就触发多少更新，不多也不少。<br><br>说起 Flux 架构，FB 提供的标准实现非常繁琐，所以社区的各种造轮子版本层出不穷，目前其实还没有找到一个公认的最佳实践，而且大部分新 Flux 实现都引入了很多函数式概念，你如果对函数式编程不熟悉，光搞清楚那些概念就得花很久。<br><br>如果你真的理解了 Flux，你又会发现其实 Vue 也是可以应用 Flux 架构的。比如 <a href="//link.zhihu.com/?target=https%3A//github.com/optimizely/nuclear-js" class=" wrap external" target="_blank" rel="nofollow noreferrer">optimizely/nuclear-js · GitHub<i class="icon-external"></i></a> 是一个 Flux 变种，他们就是同时把这个东西用在了 React 和 Vue 上面。<br><br>再谈谈开发风格的偏好：React 推荐的做法是 JSX + inline style，也就是把 HTML 和 CSS 全都整进 JavaScript 了。Vue 的默认 API 是以简单易上手为目标，但是进阶之后推荐的是使用 webpack + vue-loader 的单文件组件格式：<br><br><img src="https://pic4.zhimg.com/6af17bf9a1a6eadb50d5545313c1db77_b.png" data-rawwidth="829" data-rawheight="1009" class="origin_image zh-lightbox-thumb" width="829" data-original="https://pic4.zhimg.com/6af17bf9a1a6eadb50d5545313c1db77_r.png"><br>依然是熟悉的 HTML 和 CSS，但是可以放在一个文件里。<b>而且你还可以使用你想要的预处理器，比如 LESS, Jade, Coffee, Babel，都可以。</b><br><br>然后扯一扯模板 vs. JSX 的问题。JSX 在逻辑表达能力上虽然完爆模板，但是很容易写出凌乱的 render 函数，不如模板看起来一目了然。当然这里也有个人偏好的问题。<br><br>React 的社区/组件生态比 Vue 大很多，这个是很显然的。不过说实话我很少见到现成的第三方组件完全符合我的要求。<br><br>最后，使用场景上来说：React 配合严格的 Flux 架构，适合超大规模多人协作的复杂项目。理论上 Vue 配合类似架构也可以胜任这样的用例，但缺少类似 Flux 这样的官方架构。小快灵的项目上，Vue 和 React 的选择更多是开发风格的偏好。对于需要对 DOM 进行很多自定义操作的项目，Vue 的灵活性优于 React。<br><br>—<br><br>更新：<br><br>楼下有些回答说 Vue 的核心是 MVVM 双向绑定，然后就直接跳跃到了『不适合持续工程迭代』的结论。且不说这样的跳跃太草率，这样的看法本身对于双向绑定的理解也是有偏差的。表单的双向绑定，说到底不过是 （value 的单向绑定 + onChange 事件侦听）的一个语法糖，你如果不想用 v-model，像 React 那样处理也是完全可以的。另一方面，组件间的数据传递，Vue 默认是单向的，和 React 一样。<br><br><b>React 本身并不存在所谓的『单向数据流』，这完全是 Flux 引入的概念。</b>其核心还是在于避免组件的 local state，强调把 state 抽取出来进行集中的管理。没有 Flux 的情况下 React 一样会有状态难以管理的问题，其根源在于在哪里存放和管理 state，和双向绑定没有本质联系。那难道 Vue 就不能这样管理状态吗？当然是可以的，Vue 现在可以通过 <a href="//link.zhihu.com/?target=https%3A//github.com/egoist/revue" class=" wrap external" target="_blank" rel="nofollow noreferrer">egoist/revue · GitHub<i class="icon-external"></i></a> 和 Redux 进行配合，也可以用 Vue 专属的状态管理架构 Vuex: <a href="//link.zhihu.com/?target=https%3A//github.com/vuejs/vuex/" class=" wrap external" target="_blank" rel="nofollow noreferrer">vuejs/vuex · GitHub<i class="icon-external"></i></a> ，『单向数据流』并没有 React 吹的那么神，直接因为这一点就觉得 Vue 不适合工程迭代，完全站不住脚。</div>
+        <script src="\assets\js\APlayer.min.js"> </script><div>谢邀，也感谢你对 Vue 的欣赏。<br><br><br>首先，其实 Vue 也完全可以全量赋值的，唯一需要的小优化就是给 v-repeat 列表一个 track-by 属性，提示一下如何判断两个对象是否是同一份数据。如果是没有复杂交互的列表，可以直接 track-by=”$index” 原地复用 DOM 元素。<br><br><br>合理使用 track-by 的情况下，Vue 甚至可以比 React 更快（这里渲染的是 100 * 5 的数据表，每一帧都是全量新数据赋值）：<br><br><a href="//link.zhihu.com/?target=http%3A//vuejs.github.io/js-repaint-perfs/vue/" class=" wrap external" target="_blank" rel="nofollow noreferrer">dbmon (Vue)<i class="icon-external"></i></a><br><br><a href="//link.zhihu.com/?target=http%3A//vuejs.github.io/js-repaint-perfs/react/" class=" wrap external" target="_blank" rel="nofollow noreferrer">dbmon (react)<i class="icon-external"></i></a><br><br><br>在超大量数据的首屏渲染速度上，React 有一定优势，因为 Vue 的渲染机制启动时候要做的工作比较多，而且 React 支持服务端渲染。<br><br><br>需要指出的一点：React 的 Virtual DOM 也不是不需要优化的。复杂的应用里你有两个选择 1. 手动添加 shouldComponentUpdate 来避免不需要的 vdom re-render；2. Components 尽可能都用 pureRenderMixin，然后采用 Flux 结构 + Immutable.js。其实也不是那么简单的。相比之下，Vue 由于采用依赖追踪，默认就是优化状态：你动了多少数据，就触发多少更新，不多也不少。<br><br><br>说起 Flux 架构，FB 提供的标准实现非常繁琐，所以社区的各种造轮子版本层出不穷，目前其实还没有找到一个公认的最佳实践，而且大部分新 Flux 实现都引入了很多函数式概念，你如果对函数式编程不熟悉，光搞清楚那些概念就得花很久。<br><br>如果你真的理解了 Flux，你又会发现其实 Vue 也是可以应用 Flux 架构的。比如<br><a href="//link.zhihu.com/?target=https%3A//github.com/optimizely/nuclear-js" class=" wrap external" target="_blank" rel="nofollow noreferrer">optimizely/nuclear-js · GitHub<i class="icon-external"></i><br></a> 是一个 Flux 变种，他们就是同时把这个东西用在了 React 和 Vue 上面。<br><br>再谈谈开发风格的偏好：React 推荐的做法是 JSX + inline style，也就是把 HTML 和 CSS 全都整进 JavaScript 了。Vue 的默认 API 是以简单易上手为目标，但是进阶之后推荐的是使用 webpack + vue-loader 的单文件组件格式：<br><br><br><img src="https://pic4.zhimg.com/6af17bf9a1a6eadb50d5545313c1db77_b.png" data-rawwidth="829" data-rawheight="1009" class="origin_image zh-lightbox-thumb" width="829" data-original="https://pic4.zhimg.com/6af17bf9a1a6eadb50d5545313c1db77_r.png"><br><br>依然是熟悉的 HTML 和 CSS，但是可以放在一个文件里。<b>而且你还可以使用你想要的预处理器，比如 LESS, Jade, Coffee, Babel，都可以。</b><br><br>然后扯一扯模板 vs. JSX 的问题。JSX 在逻辑表达能力上虽然完爆模板，但是很容易写出凌乱的 render 函数，不如模板看起来一目了然。当然这里也有个人偏好的问题。<br><br><br>React 的社区/组件生态比 Vue 大很多，这个是很显然的。不过说实话我很少见到现成的第三方组件完全符合我的要求。<br><br>最后，使用场景上来说：React 配合严格的 Flux 架构，适合超大规模多人协作的复杂项目。理论上 Vue 配合类似架构也可以胜任这样的用例，但缺少类似 Flux 这样的官方架构。小快灵的项目上，Vue 和 React 的选择更多是开发风格的偏好。对于需要对 DOM 进行很多自定义操作的项目，Vue 的灵活性优于 React。<br><br><br>—<br><br><br>更新：<br><br><br>楼下有些回答说 Vue 的核心是 MVVM 双向绑定，然后就直接跳跃到了『不适合持续工程迭代』的结论。且不说这样的跳跃太草率，这样的看法本身对于双向绑定的理解也是有偏差的。表单的双向绑定，说到底不过是 （value 的单向绑定 + onChange 事件侦听）的一个语法糖，你如果不想用 v-model，像 React 那样处理也是完全可以的。另一方面，组件间的数据传递，Vue 默认是单向的，和 React 一样。<br><br><br><b>React 本身并不存在所谓的『单向数据流』，这完全是 Flux 引入的概念。</b>其核心还是在于避免组件的 local state，强调把 state 抽取出来进行集中的管理。没有 Flux 的情况下 React 一样会有状态难以管理的问题，其根源在于在哪里存放和管理 state，和双向绑定没有本质联系。那难道 Vue 就不能这样管理状态吗？当然是可以的，Vue 现在可以通过<br><a href="//link.zhihu.com/?target=https%3A//github.com/egoist/revue" class=" wrap external" target="_blank" rel="nofollow noreferrer">egoist/revue · GitHub<i class="icon-external"></i><br></a> 和 Redux 进行配合，也可以用 Vue 专属的状态管理架构 Vuex: <a href="//link.zhihu.com/?target=https%3A//github.com/vuejs/vuex/" class=" wrap external" target="_blank" rel="nofollow noreferrer">vuejs/vuex · GitHub<i class="icon-external"></i></a> ，『单向数据流』并没有 React 吹的那么神，直接因为这一点就觉得 Vue 不适合工程迭代，完全站不住脚。<br></div>
       
     </div>
     
@@ -601,6 +601,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2017/09/29/前端笔记/" rel="prev" title="前端笔记">
+                前端笔记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -672,7 +676,7 @@
             
               <a href="/archives">
             
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -694,7 +698,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -827,7 +831,7 @@
   <span id="busuanzi_container_site_pv">
       本站总访问量<span id="busuanzi_value_site_pv"></span>次
   </span>
-  <span class="post-count">博客全站共11.3k字</span>
+  <span class="post-count">博客全站共11.4k字</span>
   </div>
 
         
