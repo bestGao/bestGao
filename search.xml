@@ -3,6 +3,28 @@
   
     
     <entry>
+      <title><![CDATA[“JJ]]></title>
+      <url>/2017/10/03/%E2%80%9CJJ/</url>
+      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script>]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[前端]]></title>
+      <url>/2017/10/03/%E5%89%8D%E7%AB%AF/</url>
+      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script>]]></content>
+      
+        
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[前端笔记]]></title>
       <url>/2017/09/29/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/</url>
       <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>checkbox全选全不选：<br>    prop用于操作元素的固有属性<br>    attr用于自定义属性<br>    $(“#all”).click(function(){<br>        if(this.checked){<br>            $(“#list :checkbox”).prop(“checked”, true);<br>        }else{<br>        $(“#list :checkbox”).prop(“checked”, false);<br>        }<br>    });<br>    iframe内的元素操作外部元素：<br>        $(‘.cropped’).delegate(“img”, “click”, function () {<br>        var headpicsrc=$(this).attr(“src”);<br>        //$(“.modal-backdrop.in”).removeClass(“in”);<br>        $(‘#header-pic img’, window.parent.document).attr(“src”, headpicsrc);<br>        $(‘#.modal-backdrop.in’, window.parent.document).attr(“src”, headpicsrc);<br>        $(‘#filePath’, window.parent.document).val(tempArr[0]);<br>        });<br>        jaquery.data()保存后台传来的数据：<br>         //存<br>         $(‘body’).data(‘kaoqi’,data.location);<br>         //取<br>         console.log($(‘body’).data(‘kaoqi’));<br>         jquery的selected选择器：<br>          var companychkworksetid=$(“#position”).find(“option:selected”).attr(“data-id”);<br>          var pacalendarmodelinfoid=$(“#company”).find(“option:selected”).attr(“data-id”);<br>          var starttime=$(“#company”).find(“option:selected”).attr(“data-start”);<br>          var endtime=$(“#company”).find(“option:selected”).attr(“data-end”);</p>
@@ -359,20 +381,6 @@ webkit-playsinline="true"
         <tags>
             
             <tag> 歌 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[前端]]></title>
-      <url>/2017/09/23/%E5%89%8D%E7%AB%AF/</url>
-      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script>]]></content>
-      
-        
-        <tags>
-            
-            <tag> 技术 </tag>
             
         </tags>
         
