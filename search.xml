@@ -3,24 +3,43 @@
   
     
     <entry>
-      <title><![CDATA[前端]]></title>
-      <url>/2017/10/07/%E5%89%8D%E7%AB%AF-1/</url>
+      <title><![CDATA[AI Learning]]></title>
+      <url>/2017/12/21/AI-Learning/</url>
       <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script>]]></content>
       
+        <categories>
+            
+            <category> AI </category>
+            
+            <category> Future </category>
+            
+        </categories>
+        
         
     </entry>
     
     <entry>
-      <title><![CDATA[JJ]]></title>
+      <title><![CDATA[web-front-end]]></title>
       <url>/2017/10/03/JJ/</url>
-      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p> ?????,??????</p>
-]]></content>
+      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script> <h1 style="color:red">前端概念</h1>]]></content>
       
         <categories>
             
-            <category> JJ </category>
+            <category> 前端 </category>
             
-            <category> ?? </category>
+            <category> HTML </category>
+            
+            <category> CSS </category>
+            
+            <category> JavaScript </category>
+            
+            <category> React </category>
+            
+            <category> Redux </category>
+            
+            <category> Webpack </category>
+            
+            <category> ndoe.js </category>
             
         </categories>
         
@@ -36,135 +55,12 @@
     </entry>
     
     <entry>
-      <title><![CDATA[前端]]></title>
-      <url>/2017/10/03/%E5%89%8D%E7%AB%AF/</url>
-      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script>]]></content>
-      
-        
-        <tags>
-            
-            <tag> 技术 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[前端笔记]]></title>
-      <url>/2017/09/29/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/</url>
-      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>checkbox全选全不选：<br>    prop用于操作元素的固有属性<br>    attr用于自定义属性<br>    $(“#all”).click(function(){<br>        if(this.checked){<br>            $(“#list :checkbox”).prop(“checked”, true);<br>        }else{<br>        $(“#list :checkbox”).prop(“checked”, false);<br>        }<br>    });<br>    iframe内的元素操作外部元素：<br>        $(‘.cropped’).delegate(“img”, “click”, function () {<br>        var headpicsrc=$(this).attr(“src”);<br>        //$(“.modal-backdrop.in”).removeClass(“in”);<br>        $(‘#header-pic img’, window.parent.document).attr(“src”, headpicsrc);<br>        $(‘#.modal-backdrop.in’, window.parent.document).attr(“src”, headpicsrc);<br>        $(‘#filePath’, window.parent.document).val(tempArr[0]);<br>        });<br>        jaquery.data()保存后台传来的数据：<br>         //存<br>         $(‘body’).data(‘kaoqi’,data.location);<br>         //取<br>         console.log($(‘body’).data(‘kaoqi’));<br>         jquery的selected选择器：<br>          var companychkworksetid=$(“#position”).find(“option:selected”).attr(“data-id”);<br>          var pacalendarmodelinfoid=$(“#company”).find(“option:selected”).attr(“data-id”);<br>          var starttime=$(“#company”).find(“option:selected”).attr(“data-start”);<br>          var endtime=$(“#company”).find(“option:selected”).attr(“data-end”);</p>
-<pre><code>    $(&quot;input[type=radio]&quot;):checked
-    selected下拉表单赋值：
-    $(&quot;#province&gt;option:selected&quot;).val(data.Province);
-    $(&quot;#city&gt;option:selected&quot;).html(data.City);
+      <title><![CDATA[javascript notes]]></title>
+      <url>/2017/09/26/JavaScript/</url>
+      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><div><br>DOM+ECMAScript+BOM=JavaScript;<br>(Document Object Model) (Browser Object Model)<br>提供访问和操作网页内容的方法和接口 提供与浏览器交互的方法和接口<br>BOM对象 : window document location navigator screen<br><script async="async" defer="defer" language="javascript" type="text/javascript"><br>    //转义字符<br>alert(“&lt;\/script&gt;”);<br>//async 立即下载脚本 一定在页面load之前 可能在DOMContentLoaded之前之后<br>// defer 延迟到文档完全被解析和显示后执行<br>alert(“\</script>“);<br><br>（1）<br>1.初始化/销毁对象  var object=null;<br>typeof null=object;(空对象指针);<br>2:var a=new Object();<br>a.constructor=function Object(){}<br>a.hasOwnProperty(“name”) 对象自身的属性，而不包括从原型对象继承的属性<br>3.isPrototypeOf(objectname)检查传入的对象是否是原型<br>（2）<br>面向对象的程序设计<br>（3）break和continue语句<br>break 和 continue 语句用于在循环中精确地控制代码的执行。其中，break 语句会立即退出循环，<br>强制继续执行循环后面的语句。而 continue 语句虽然也是立即退出循环，但退出循环后会从循环的顶<br>部继续执行。请看下面的例子：<br>var num = 0;<br>for (var i=1; i &lt; 10; i++) {<br> if (i % 5 == 0) {<br> break;<br> }<br> num++;<br>}<br>alert(num); //4<br>这个例子中的 for 循环会将变量 i 由 1 递增至 10。在循环体内，有一个 if 语句检查 i 的值是否<br>可以被 5 整除（使用求模操作符）。如果是，则执行 break 语句退出循环。另一方面，变量 num 从 0 开<br>始，用于记录循环执行的次数。在执行 break 语句之后，要执行的下一行代码是 alert()函数，结果<br>显示 4。也就是说，在变量 i 等于 5 时，循环总共执行了 4 次；而 break 语句的执行，导致了循环在<br>num 再次递增之前就退出了。如果在这里把 break 替换为 continue 的话，则可以看到另一种结果：<br>var num = 0;<br>for (var i=1; i &lt; 10; i++) {<br> if (i % 5 == 0) {<br> continue;<br> }  num++;<br>}<br>alert(num); //8<br>例子的结果显示 8，也就是循环总共执行了 8 次。当变量 i 等于 5 时，循环会在 num 再次递增之前<br>退出，但接下来执行的是下一次循环，即 i 的值等于 6 的循环。于是，循环又继续执行，直到 i 等于<br>10 时自然结束。而 num 的最终值之所以是 8，是因为 continue 语句导致它少递增了一次。<br>break 和 continue 语句都可以与 label 语句联合使用，从而返回代码中特定的位置。这种联合<br>使用的情况多发生在循环嵌套的情况下，如下面的例子所示：<br>var num = 0;<br>outermost:<br>for (var i=0; i &lt; 10; i++) {<br> for (var j=0; j &lt; 10; j++) {<br> if (i == 5 &amp;&amp; j == 5) {<br> break outermost;<br> }<br> num++;<br> }<br>}<br>alert(num); //55<br>在这个例子中，outermost 标签表示外部的 for 语句。如果每个循环正常执行 10 次，则 num++<br>语句就会正常执行 100 次。换句话说，如果两个循环都自然结束，num 的值应该是 100。但内部循环中<br>的 break 语句带了一个参数：要返回到的标签。添加这个标签的结果将导致 break 语句不仅会退出内<br>部的 for 语句（即使用变量 j 的循环），而且也会退出外部的 for 语句（即使用变量 i 的循环）。为此，<br>当变量 i 和 j 都等于 5 时，num 的值正好是 55。同样，continue 语句也可以像这样与 label 语句联<br>用，如下面的例子所示：<br>var num = 0;<br>outermost:<br>for (var i=0; i &lt; 10; i++) {<br> for (var j=0; j &lt; 10; j++) {<br> if (i == 5 &amp;&amp; j == 5) {<br> continue outermost;<br> }<br> num++;<br> }<br>}<br>alert(num); //95<br>在这种情况下，continue 语句会强制继续执行循环——退出内部循环，执行外部循环。当 j 是 5<br>时，continue 语句执行，而这也就意味着内部循环少执行了 5 次，因此 num 的结果是 95。<br>虽然联用 break、continue 和 label 语句能够执行复杂的操作，但如果使用过度，也会给调试<br>带来麻烦。在此，我们建议如果使用 label 语句，一定要使用描述性的标签，同时不要嵌套过多的循环。<br>function doAdd() {<br> if(arguments.length == 1) {<br> alert(arguments[0] + 10);<br> } else if (arguments.length == 2) {<br> alert(arguments[0] + arguments[1]);<br> }<br>}<br>doAdd(10); //20<br>doAdd(30, 20); //50<br>函数 doAdd()会在只有一个参数的情况下给该参数加上 10；如果是两个参数，则将那个参数简单<br>相加并返回结果。因此，doAdd(10)会返回 20，而 doAdd(30,20)则返回 50。虽然这个特性算不上完<br>美的重载，但也足够弥补 ECMAScript 的这一缺憾了。<br>另一个与参数相关的重要方面，就是 arguments 对象可以与命名参数一起使用，如下面的例子所示：<br>function doAdd(num1, num2) {<br> if(arguments.length == 1) {<br> alert(num1 + 10);<br> } else if (arguments.length == 2) {<br> alert(arguments[0] + num2);<br> }<br>}<br>通过检查传入函数中参数的类型和数量并作出不同的反应，可以模仿方法的重载<br>在重写后的这个 doAdd()函数中，两个命名参数都与 arguments 对象一起使用。由于 num1 的值<br>与 arguments[0]的值相同，因此它们可以互换使用（当然，num2 和 arguments[1]也是如此）。<br>关于 arguments 的行为，还有一点比较有意思。那就是它的值永远与对应命名参数的值保持同步。<br>例如：<br>function doAdd(num1, num2) {<br> arguments[1] = 10;<br> alert(arguments[0] + num2);<br>}<br>每次执行这个 doAdd()函数都会重写第二个参数，将第二个参数的值修改为 10。因为 arguments<br>对象中的值会自动反映到对应的命名参数，所以修改 arguments[1]，也就修改了 num2，结果它们的<br>值都会变成 10。不过，这并不是说读取这两个值会访问相同的内存空间；它们的内存空间是独立的，但<br>它们的值会同步。另外还要记住，如果只传入了一个参数，那么为 arguments[1]设置的值不会反应到<br>命名参数中。这是因为 arguments 对象的长度是由传入的参数个数决定的，（eg:<br>function doAdd(num1, num2) {<br> arguments[1] = 10;<br> alert(arguments[0] + num2);<br>}<br>doAdd(34)<br>//undefined<br>因为实参长度不为2，arguments长度由实参决定。<br>）不是由定义函数时的命名<br>参数的个数决定的。<br>关于参数还要记住最后一点：没有传递值的命名参数将自动被赋予 undefined 值。这就跟定义了<br>变量但又没有初始化一样。例如，如果只给 doAdd()函数传递了一个参数，则 num2 中就会保存<br>undefined 值。<br>严格模式对如何使用 arguments 对象做出了一些限制。首先，像前面例子中那样的赋值会变得无<br>效。也就是说，即使把 arguments[1]设置为 10，num2 的值仍然还是 undefined。其次，重写<br>arguments 的值会导致语法错误（代码将不会执行）。<br>ECMAScript语法(类c):<br>1.ECMAScript中一切（变量，函数名，操作符）都区分大小写。test 和 Test是两个变量名。<br>2. 标识符（变量，函数，属性的名字或者函数的参数）第一个字符必须是字母，下划线( _ )，美元符号（$）<br>其他字符可以是 数字，字母，下划线，$ 可以包含扩展的ASCII或Unicode字母  采用驼峰大小写格式<br> eg: firstSecond,myCar,doSomethingImportant<br>不能把关键字保留字 true,false,null用作标识符<br>3.注释<br>//单行<br>/<em>
+</em>块级<br><em>注释
+</em>/（企业级应用注释格式）<br>4.严格模式<br>“use strict”(编译指示 pragma)为JavaScript定义了一种不同的解析与执行模型<br>5.ECMAScript变量是松散类型（可以用来保存任何类型的数据）的，每个变量仅仅是一个用于保存值的占位符。<br>eg:var message;(message==undefined)<br>eg:var name=”lily”;(初始化)name=100;(改变变量值的同时改变值的类型)<br>使用var操作符定义的变量将成为该变量作用域的局部变量 （在函数中使用var定义一个变量，那么变量在函数退出后被销毁）<br>eg:function test(){<br>var message=”HI”;<br>return;<br>}<br>test();<br>alert(message);//undefined<br>省略var可以定义全局变量<br>eg:function test(){<br>//“use strict” //严格模式下报错 相应变量不会马上就有定义，不易维护//不一定，待考证<br> message=”HI”;<br>return;<br>}<br>test();<br>alert(message);//HI<br>一条语句定义多个变量 var message=”hi”,found=false,age=100,testArr=[“set”,100,”HI”];<br>6.数据类型<br>5种简单（基本）数据类型:<br>Undefined:<br>(var message==var message=undefined)<br>var message;undefined==message;typeof age==”undefined”//true<br>Null:<br>如果定义的变量准备在将来用于保存对象，那么最好将该变量初始化为 null<br>if (car != null){<br>// 对 car 对象执行某些操作<br>}<br>var newObject=null;<br>null == undefined;<br>Boolean: true false<br>可以对任何数据类型的值调用 Boolean() 函数，而且总会返回一个 Boolean 值<br>要将一个值转换为其对应的 Boolean 值，可以调用转型函数 Boolean()<br>eg:var message = “Hello world!”;<br>var messageAsBoolean = Boolean(message);<br>Number:<br>var intNum = 55; // 整数<br>var octalNum1 = 070; // 八进制的 56<br>var octalNum2 = 079; // 无效的八进制数值——解析为 79<br>var octalNum3 = 08; // 无效的八进制数值——解析为 8<br>var hexNum1 = 0xA; // 十六进制的 10<br>var hexNum2 = 0x1f; // 十六进制的 31<br>0/0!=NaN//NaN<br>任何涉及 NaN 的操作（例如 NaN /10）都会返回 NaN<br> NaN 与任何值都不相等，包括 NaN 本身<br>isNaN();<br>alert(isNaN(NaN)); //true<br>alert(isNaN(10)); //false（10 是一个数值）<br>alert(isNaN(“10”)); //false（可以被转换成数值 10）<br>alert(isNaN(“blue”)); //true（不能转换成数值）<br>alert(isNaN(true)); //false（可以被转换成数值 1）<br>在基于对象调用 isNaN()<br>函数时，会首先调用对象的 valueOf() 方法，然后确定该方法返回的值是否可以转<br>换为数值。如果不能，则基于这个返回值再调用 toString() 方法，再测试返回值。<br>而这个过程也是 ECMAScript中内置函数和操作符的一般执行流程<br>String:<br>ECMAScript 中的字符串是不可变的，也就是说，字符串一旦创建，它们的值就不能改变。要改变<br>某个变量保存的字符串，首先要销毁原来的字符串，然后再用另一个包含新值的字符串填充该变量，<br>例如：<br>var lang = “Java”;<br>lang = lang + “Script”;<br>以上示例中的变量 lang 开始时包含字符串 “Java” 。而第二行代码把 lang 的值重新定义为 “Java”<br>与 “Script” 的组合，即 “JavaScript” 。实现这个操作的过程如下：首先创建一个能容纳 10 个字符的<br>新字符串，然后在这个字符串中填充 “Java” 和 “Script” ，最后一步是销毁原来的字符串 “Java” 和字<br>符串 “Script” ，因为这两个字符串已经没用了。这个过程是在后台发生的，而这也是在某些旧版本的<br>图灵社区会员 StinkBC(StinkBC@gmail.com) 专享 尊重版权<br>34 第 3章 基本概念<br>浏览器（例如版本低于 1.0 的 Firefox、IE6 等）中拼接字符串时速度很慢的原因所在。但这些浏览器后<br>来的版本已经解决了这个低效率问题。<br>var num = 10;<br>alert(num.toString()); // “10”<br>alert(num.toString(2)); // “1010”<br>alert(num.toString(8)); // “12”<br>alert(num.toString(10)); // “10”<br>alert(num.toString(16)); // “a”<br>1种复杂数据类型:<br>Object-由一组无序的键值对组成；<br>    ECMAScript 中的对象其实就是一组数据和功能的集合。对象可以通过执行 new 操作符后跟要创建<br>的对象类型的名称来创建。而创建 Object 类型的实例并为其添加属性和（或）方法，就可以创建自定<br>义对象，如下所示：<br>var o = new Object();<br>即在 ECMAScript 中，<br>（就像 Java 中的 java.lang.Object 对象一样） Object 类型是所有它的实例的基础。换句话说，<br>Object 类型所具有的任何属性和方法也同样存在于更具体的对象中。<br>Object 的每个实例都具有下列属性和方法。<br> constructor ：保存着用于创建当前对象的函数。对于前面的例子而言，构造函数（constructor）<br>就是 Object() 。<br> hasOwnProperty(propertyName) ：用于检查给定的属性在当前对象实例中（而不是在实例<br>的原型中也不是在构造函数中）是否存在。其中，作为参数的属性名（ propertyName ）必须以字符串形式指定（例<br>如： o.hasOwnProperty(“name”) ）。<br> isPrototypeOf(object) ：用于检查传入的对象是否是传入对象的原型（第 5 章将讨论原<br>型）。<br> propertyIsEnumerable(propertyName) ：用于检查给定的属性是否能够使用 for-in 语句<br>（本章后面将会讨论）来枚举。与 hasOwnProperty() 方法一样，作为参数的属性名必须以字符<br>串形式指定。<br> toLocaleString() ：返回对象的字符串表示，该字符串与执行环境的地区对应。<br> toString() ：返回对象的字符串表示。<br> valueOf() ：返回对象的字符串、数值或布尔值表示。通常与 toString() 方法的返回值<br>相同。<br>function People(name,sex,age){<br>    this.name=name;<br>this.sex=sex;<br>this.age=age;<br>};<br>var lily=new People(“lily”,”female”,20);<br>从技术角度讲，ECMA-262 中对象的行为不一定适用于 JavaScript 中的其他对象。<br>浏览器环境中的对象，比如 BOM 和 DOM 中的对象，都属于宿主对象，因为它们是<br>由宿主实现提供和定义的。ECMA-262 不负责定义宿主对象，因此宿主对象可能会也<br>可能不会继承 Object<br>ECMA-262 描述了一组用于操作数据值的操作符，包括算术操作符（如加号和减号）、位操作符、<br>关系操作符和相等操作符。ECMAScript 操作符的与众不同之处在于，它们能够适用于很多值，例如字<br>符串、数字值、布尔值，甚至对象。不过，在应用于对象时，相应的操作符通常都会调用对象的 valueOf()<br>和（或） toString() 方法，以便取得可以操作的值。<br>检测数据类型 typeof:<br>“undefined”值未定义；<br>“boolean”值是布尔值；<br>“string”值是字符串；<br>“number”值是数值；<br>“object”值是对象；<br>“function”值是函数（是对象，与对象又区分）<br>typeof null=&gt;”object”  null表示空对象指针<br>7.数值转换<br>有 3 个函数可以把非数值转换为数值： Number()<br>Number() 函数的转换规则如下。<br>  如果是 Boolean 值， true 和 false 将分别被转换为 1 和 0。<br>  如果是数字值，只是简单的传入和返回。<br>  如果是 null 值，返回 0。<br>  如果是 undefined ，返回 NaN 。<br>  如果是字符串，遵循下列规则：<br>  如果字符串中只包含数字（包括前面带正号或负号的情况），则将其转换为十进制数值，即 “1”<br>会变成 1， “123” 会变成 123，而 “011” 会变成 11（注意：前导的零被忽略了）；<br>  如果字符串中包含有效的浮点格式，如 “1.1” ，则将其转换为对应的浮点数值（同样，也会忽<br>略前导零）；<br>  如果字符串中包含有效的十六进制格式，例如 “0xf” ，则将其转换为相同大小的十进制整<br>数值；<br>  如果字符串是空的（不包含任何字符），则将其转换为 0；<br>  如果字符串中包含除上述格式之外的字符，则将其转换为 NaN 。<br>  如果是对象，则调用对象的 valueOf() 方法，然后依照前面的规则转换返回的值。如果转换<br>的结果是 NaN ，则调用对象的 toString() 方法，然后再次依照前面的规则转换返回的字符<br>在不知道要转换的值是不是 null 或 undefined 的情况下，还可以使用转型函数 String() ，这个<br>函数能够将任何类型的值转换为字符串。 String() 函数遵循下列转换规则：<br>  如果值有 toString() 方法，则调用该方法（没有参数）并返回相应的结果；<br>  如果值是 null ，则返回 “null” ；<br>  如果值是 undefined ，则返回 “undefined” 。<br>下面再看几个例子：<br>var value1 = 10;<br>var value2 = true;<br>var value3 = null;<br>var value4;<br>alert(String(value1)); // “10”<br>alert(String(value2)); // “true”<br>alert(String(value3)); // “null”<br>alert(String(value4)); // “undefined”<br>串值。<br>var num1 = Number(“Hello world!”); //NaN<br>var num2 = Number(“”); //0<br>var num3 = Number(“000011”); //11<br>var num4 = Number(true); //1<br>一元加操作符（+）的操作与 Number() 函数相同<br> 、 parseInt()<br> parseInt() 函数在转换字符串时，更多的是看其是否符合数值模式。它会忽略字<br>符串前面的空格，直至找到第一个非空格字符。如果第一个字符不是数字字符或者负号， parseInt()<br>就会返回 NaN ；也就是说，用 parseInt() 转换空字符串会返回 NaN （ Number() 对空字符返回 0）。如<br>果第一个字符是数字字符， parseInt() 会继续解析第二个字符，直到解析完所有后续字符或者遇到了<br>一个非数字字符。<br>var num = parseInt(“0xAF”, 16); //175<br>var num1 = parseInt(“10”, 2); //2 （按二进制解析）<br>var num2 = parseInt(“10”, 8); //8 （按八进制解析）<br>var num3 = parseInt(“10”, 10); //10 （按十进制解析）<br>var num4 = parseInt(“10”, 16); //16 （按十六进制解析）<br>parseFloat()：<br>与 parseInt() 函数类似， parseFloat() 也是从第一个字符（位置 0）开始解析每个字符。而且<br>也是一直解析到字符串末尾，或者解析到遇见一个无效的浮点数字字符为止。也就是说，字符串中的第<br>一个小数点是有效的，而第二个小数点就是无效的了，因此它后面的字符串将被忽略。举例来说，<br>“22.34.5” 将会被转换为 22.34。<br>除了第一个小数点有效之外， parseFloat() 与 parseInt() 的第二个区别在于它始终都会忽略前导<br>的零。 parseFloat() 可以识别前面讨论过的所有浮点数值格式，也包括十进制整数格式。但十六进制格<br>式的字符串则始终会被转换成 0。由于 parseFloat() 只解析十进制值，因此它没有用第二个参数指定基<br>数的用法。最后还要注意一点：如果字符串包含的是一个可解析为整数的数（没有小数点，或者小数点后<br>都是零）， parseFloat() 会返回整数<br>var num1 = parseFloat(“1234blue”); //1234 （整数）<br>var num2 = parseFloat(“0xA”); //0<br>var num3 = parseFloat(“22.5”); //22.5<br>var num4 = parseFloat(“22.34.5”); //22.34<br>var num5 = parseFloat(“0908.5”); //908.5<br>var num6 = parseFloat(“3.125e7”); //31250000<br>8.运算符<br>-100-1==~100 按位非<br>9.逗号运算符<br>使用逗号操作符可以在一条语句中执行多个操作，如下面的例子所示：<br>var num1=1, num2=2, num3=3;<br>逗号操作符多用于声明多个变量；但除此之外，逗号操作符还可以用于赋值。在用于赋值时，逗号<br>操作符总会返回表达式中的最后一项，如下面的例子所示：<br>var num = (5, 1, 4, 8, 0); // num 的值为 0<br>由于 0 是表达式中的最后一项，因此 num 的值就是 0。虽然逗号的这种使用方式并不常见，但这个<br>例子可以帮我们理解逗号的这种行为。<br>（2）变量、作用域和内存<br>基本类型和引用类型的值<br>ECMAScript 变量可能包含两种不同数据类型的值：基本类型值和引用类型值。基本类型值指的是<br>简单的数据段，而引用类型值指那些可能由多个值构成的对象。<br>在将一个值赋给变量时，解析器必须确定这个值是基本类型值还是引用类型值。第 3 章讨论了 5 种<br>基本数据类型： Undefined 、 Null 、 Boolean 、 Number 和 String 。这 5 种基本数据类型是按值访问<br>的，因为可以操作保存在变量中的实际的值。<br>引用类型的值是保存在内存中的对象。与其他语言不同，JavaScript 不允许直接访问内存中的位置，<br>也就是说不能直接操作对象的内存空间。在操作对象时，实际上是在操作对象的引用而不是实际的对象。<br>为此，引用类型的值是按引用访问的<br>当复制保存着对象的某个变量时，操作的是对象的引用。但在为对象添加属性时，操作的是实际<br>的对象<br></div>
 
-    &lt;select class=&quot;form-control&quot; id=&quot;province&quot; name=&quot;province&quot;&gt;
-    &lt;option value=&quot;&quot; data-code=&quot;&quot;&gt;—— 省 ——&lt;/option&gt;
-    &lt;option value=&quot;北京市&quot; data-code=&quot;110000&quot; selected=&quot;&quot;&gt;北京市&lt;/option&gt;
-    &lt;option value=&quot;天津市&quot; data-code=&quot;120000&quot;&gt;天津市&lt;/option&gt;
-    &lt;option value=&quot;河北省&quot; data-code=&quot;130000&quot;&gt;河北省&lt;/option&gt;
-    获取地址栏数据：
-    var url = document.location.href;
-    var rid = url.split(&quot;=&quot;)[1];
-        function GetQueryString(name)
-                    {
-                        var reg = new RegExp(&quot;(^|&amp;)&quot; + name + &quot;=([^&amp;]*)(&amp;|$)&quot;);
-                        var r = window.location.search.substr(1).match(reg);
-                        if (r != null) return unescape(r[2]); return null;
-                    }
-                    var account = GetQueryString(&quot;mail&quot;);
-    http://localhost:8097/UserCenter/active?mail=123@qq.com
-    秒数转换成时间格式：
-    /Date(1478849129000)/&quot;
-    var str = data.RegisterDatetime;
-                    var d = eval(&apos;new &apos; + str.substr(1, str.length - 2));
-                    var ar_date = [d.getFullYear(), d.getMonth() + 1, d.getDate()];
-                    function dFormat(i)
-                    {
-                        return i &lt; 10 ? &quot;0&quot; + i.toString() : i;
-                    }
-                    for (var i = 0; i &lt; ar_date.length; i++) ar_date[i] = dFormat(ar_date[i]);
-                    $(&quot;#registertime&quot;).val(ar_date.join(&apos;-&apos;));
-手机页面框架：
-html{font-size: 32px;}
-body{-webkit-tap-highlight-color:rgba(0,0,0,0);在手机上点击链接去除背景}
-//iphone 6
-@media (min-device-width : 375px) {
-   html{font-size: 64px;}
-}
-// iphone6 plus
-@media (min-device-width : 414px) {
-    html{font-size: 75px;}
-}
-*/
-/@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5,因为5和4的屏幕宽度一样 */}
-@media only screen and (max-device-width :480px){ }
-@media only screen and (min-device-width :481px){ }
-
-/*6*/
-@media (min-device-width : 375px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2){ }
-
-/*6+*/
-@media (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3){ }
-
-/*魅族*/
-@media only screen and (min-device-width :1080px) and (-webkit-min-device-pixel-ratio : 2.5){ }
-
-/*mate7*/
-@media only screen and (min-device-width :1080px) and (-webkit-min-device-pixel-ratio : 3){ }
-
-/*4 4s*/
-@media only screen and (device-height :480px) and (-webkit-device-pixel-ratio:2){ }
-
-@media screen and (min-width: 320px) and (max-width: 480px) {  }
-
-/* 平板之类的宽度 1024 以下设备 */
-@media only screen and (min-width: 321px) and (max-width: 1024px) {
-body {
-background: blue;
-}
-}
-
-/* PC客户端或大屏幕设备: 1028px 至更大 */
-@media only screen and (min-width: 1029px) {
-body {
-background: green;
-}
-}
-</code></pre><p> H5问题：<br> meta基础知识<br> H5页面窗口自动调整到设备宽度，并禁止用户缩放页面<br> <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"><br> 忽略将页面中的数字识别为电话号码<br> <meta name="format-detection" content="telephone=no"><br> 忽略Android平台中对邮箱地址的识别<br> <meta name="format-detection" content="email=no"><br> 当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari<br> <meta name="apple-mobile-web-app-capable" content="yes"><br> <!-- ios7.0版本以后，safari上已看不到效果 --><br> 将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式<br> <meta name="apple-mobile-web-app-status-bar-style" content="black"><br> <!-- 可选default、black、black-translucent --><br> viewport模板<br> viewport模板——通用<br> &lt;!DOCTYPE html&gt;<br> <html><br> <head><br> <meta charset="utf-8"><br> <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"><br> <meta content="yes" name="apple-mobile-web-app-capable"><br> <meta content="black" name="apple-mobile-web-app-status-bar-style"><br> <meta content="telephone=no" name="format-detection"><br> <meta content="email=no" name="format-detection"><br> <title>标题</title><br> <link rel="stylesheet" href="index.css"><br> </head></html></p>
- <body><br> 这里开始内容<br> </body>
-
-<p> <br> viewport模板 – target-densitydpi=device-dpi，android 2.3.5以下版本不支持<br> &lt;!DOCTYPE html&gt;<br> <html><br> <head><br> <meta charset="utf-8"><br> <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi"><!-- width取值与页面定义的宽度一致 --><br> <meta content="yes" name="apple-mobile-web-app-capable"><br> <meta content="black" name="apple-mobile-web-app-status-bar-style"><br> <meta content="telephone=no" name="format-detection"><br> <meta content="email=no" name="format-detection"><br> <title>标题</title><br> <link rel="stylesheet" href="index.css"><br> </head></html></p>
- <body><br> 这里开始内容<br> </body>
-
-<p> <br> 参考案例：<a href="http://action.weixin.qq.com/payact/readtemplate?t=mobile/2015/wxzfsht/index_tmpl" target="_blank" rel="external">http://action.weixin.qq.com/payact/readtemplate?t=mobile/2015/wxzfsht/index_tmpl</a><br> 常见问题<br> 移动端如何定义字体font-family<br> 中文字体使用系统默认即可，英文用Helvetica<br> /<em> 移动端定义字体的代码 </em>/<br> body{font-family:Helvetica;}<br> 参考《移动端使用字体的思考》<br> 移动端字体单位font-size选择px还是rem<br> 对于只需要适配少部分手机设备，且分辨率对页面影响不大的，使用px即可<br> 对于需要适配各种移动设备，使用rem，例如只需要适配iPhone和iPad等分辨率差别比较挺大的设备<br> rem配置参考：<br> html{font-size:10px}<br> @media screen and (min-width:321px) and (max-width:375px){html{font-size:11px}}<br> @media screen and (min-width:376px) and (max-width:414px){html{font-size:12px}}<br> @media screen and (min-width:415px) and (max-width:639px){html{font-size:15px}}<br> @media screen and (min-width:640px) and (max-width:719px){html{font-size:20px}}<br> @media screen and (min-width:720px) and (max-width:749px){html{font-size:22.5px}}<br> @media screen and (min-width:750px) and (max-width:799px){html{font-size:23.5px}}<br> @media screen and (min-width:800px){html{font-size:25px}}<br> 移动端touch事件(区分webkit 和 winphone)<br> 当用户手指放在移动设备在屏幕上滑动会触发的touch事件<br> 以下支持webkit<br> touchstart——当手指触碰屏幕时候发生。不管当前有多少只手指<br> touchmove——当手指在屏幕上滑动时连续触发。通常我们再滑屏页面，会调用event的preventDefault()可以阻止默认情况的发生：阻止页面滚动<br> touchend——当手指离开屏幕时触发<br> touchcancel——系统停止跟踪触摸时候会触发。例如在触摸过程中突然页面alert()一个提示框，此时会触发该事件，这个事件比较少用<br> TouchEvent<br> touches：屏幕上所有手指的信息<br> targetTouches：手指在目标区域的手指信息<br> changedTouches：最近一次触发该事件的手指信息<br> touchend时，touches与targetTouches信息会被删除，changedTouches保存的最后一次的信息，最好用于计算手指信息<br> 参数信息(changedTouches[0])<br> clientX、clientY在显示区的坐标<br> target：当前元素<br> 参考：<a href="https://developer.mozilla.org/en-US/docs/Web/API/TouchEvent" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Web/API/TouchEvent</a><br> 以下支持winphone 8<br> MSPointerDown——当手指触碰屏幕时候发生。不管当前有多少只手指<br> MSPointerMove——当手指在屏幕上滑动时连续触发。通常我们再滑屏页面，会调用css的html{-ms-touch-action: none;}可以阻止默认情况的发生：阻止页面滚动<br> MSPointerUp——当手指离开屏幕时触发<br> 移动端click屏幕产生200-300 ms的延迟响应<br> 移动设备上的web网页是有300ms延迟的，玩玩会造成按钮点击延迟甚至是点击失效。<br> 以下是历史原因，来源一个公司内一个同事的分享：<br> 2007年苹果发布首款iphone上IOS系统搭载的safari为了将适用于PC端上大屏幕的网页能比较好的展示在手机端上，使用了双击缩放(double tap to zoom)的方案，比如你在手机上用浏览器打开一个PC上的网页，你可能在看到页面内容虽然可以撑满整个屏幕，但是字体、图片都很小看不清，此时可以快速双击屏幕上的某一部分，你就能看清该部分放大后的内容，再次双击后能回到原始状态。<br> 双击缩放是指用手指在屏幕上快速点击两次，iOS 自带的 Safari 浏览器会将网页缩放至原始比例。<br> 原因就出在浏览器需要如何判断快速点击上，当用户在屏幕上单击某一个元素时候，例如跳转链接<a href="”#”"></a>，此处浏览器会先捕获该次单击，但浏览器不能决定用户是单纯要点击链接还是要双击该部分区域进行缩放操作，所以，捕获第一次单击后，浏览器会先Hold一段时间t，如果在t时间区间里用户未进行下一次点击，则浏览器会做单击跳转链接的处理，如果t时间里用户进行了第二次单击操作，则浏览器会禁止跳转，转而进行对该部分区域页面的缩放操作。那么这个时间区间t有多少呢？在IOS safari下，大概为300毫秒。这就是延迟的由来。造成的后果用户纯粹单击页面，页面需要过一段时间才响应，给用户慢体验感觉，对于web开发者来说是，页面js捕获click事件的回调函数处理，需要300ms后才生效，也就间接导致影响其他业务逻辑的处理。<br> 解决方案：<br> fastclick可以解决在手机上点击事件的300ms延迟<br> zepto的touch模块，tap事件也是为了解决在click的延迟问题<br> 触摸事件的响应顺序<br> ontouchstart<br> ontouchmove<br> ontouchend<br> onclick<br> 解决300ms延迟的问题，也可以通过绑定ontouchstart事件，加快对事件的响应<br> 什么是Retina 显示屏，带来了什么问题<br> retina：一种具备超高像素密度的液晶屏，同样大小的屏幕上显示的像素点由1个变为多个，如在同样带下的屏幕上，苹果设备的retina显示屏中，像素点1个变为4个<br> 在高清显示屏中的位图被放大，图片会变得模糊，因此移动端的视觉稿通常会设计为传统PC的2倍<br> 那么，前端的应对方案是：<br> 设计稿切出来的图片长宽保证为偶数，并使用backgroud-size把图片缩小为原来的1/2<br> //例如图片宽高为：200px*200px，那么写法如下<br> .css{width:100px;height:100px;background-size:100px 100px;}<br> 其它元素的取值为原来的1/2，例如视觉稿40px的字体，使用样式的写法为20px<br> .css{font-size:20px}<br> 参考《高清显示屏原理及设计方案》<br> ios系统中元素被触摸时产生的半透明灰色遮罩怎么去掉<br> ios用户点击一个链接，会出现一个半透明灰色遮罩, 如果想要禁用，可设置-webkit-tap-highlight-color的alpha值为0，也就是属性值的最后一位设置为0就可以去除半透明灰色遮罩<br> a,button,input,textarea{-webkit-tap-highlight-color: rgba(0,0,0,0;)}<br> 部分android系统中元素被点击时产生的边框怎么去掉<br> android用户点击一个链接，会出现一个边框或者半透明灰色遮罩, 不同生产商定义出来额效果不一样，可设置-webkit-tap-highlight-color的alpha值为0去除部分机器自带的效果<br> a,button,input,textarea{<br> -webkit-tap-highlight-color: rgba(0,0,0,0;)<br> -webkit-user-modify:read-write-plaintext-only;<br> }<br> -webkit-user-modify有个副作用，就是输入法不再能够输入多个字符<br> 另外，有些机型去除不了，如小米2<br> 对于按钮类还有个办法，不使用a或者input标签，直接用div标签<br> 参考《如何去除android上a标签产生的边框》<br> winphone系统a、input标签被点击时产生的半透明灰色背景怎么去掉<br> <meta name="msapplication-tap-highlight" content="no"><br> webkit表单元素的默认外观怎么重置<br> .css{-webkit-appearance:none;}<br> webkit表单输入框placeholder的颜色值能改变么<br> input::-webkit-input-placeholder{color:#AAAAAA;}<br> input:focus::-webkit-input-placeholder{color:#EEEEEE;}<br> webkit表单输入框placeholder的文字能换行么<br> ios可以，android不行~<br> 在textarea标签下都可以换行~<br> IE10（winphone8）表单元素默认外观如何重置<br> 禁用 select 默认下拉箭头<br> ::-ms-expand 适用于表单选择控件下拉箭头的修改，有多个属性值，设置它隐藏 (display:none) 并使用背景图片来修饰可得到我们想要的效果。<br> select::-ms-expand {<br> display: none;<br> }<br> 禁用 radio 和 checkbox 默认样式<br> ::-ms-check 适用于表单复选框或单选按钮默认图标的修改，同样有多个属性值，设置它隐藏 (display:none) 并使用背景图片来修饰可得到我们想要的效果。<br> input[type=radio]::-ms-check,<br> input[type=checkbox]::-ms-check<br> {<br> display: none;<br> }<br> 禁用PC端表单输入框默认清除按钮<br> 当表单文本输入框输入内容后会显示文本清除按钮，::-ms-clear 适用于该清除按钮的修改，同样设置使它隐藏 (display:none) 并使用背景图片来修饰可得到我们想要的效果。<br> <a href="http://www.cnblogs.com/wangpenghui522/p/5398137.html" target="_blank" rel="external">http://www.cnblogs.com/wangpenghui522/p/5398137.html</a></p>
-<p> input[type=text]::-ms-clear,<br> input[type=tel]::-ms-clear,<br> input[type=number]::-ms-clear<br> {<br> display: none;<br> }<br> 禁止ios 长按时不触发系统的菜单，禁止ios&amp;android长按时下载图片<br> .css{-webkit-touch-callout: none}<br> 禁止ios和android用户选中文字<br> .css{-webkit-user-select:none}<br> 参考《如何改变表单元素的外观(for Webkit and IE10)》<br> 打电话发短信写邮件怎么实现<br> 打电话<br> <a href="tel:0755-10086" target="_blank" rel="external">打电话给:0755-10086</a><br> 发短信，winphone系统无效<br> <a href="sms:10086" target="_blank" rel="external">发短信给: 10086</a><br> 写邮件，可参考《移动web页面给用户发送邮件的方法》<br> <a href="mailto:peun@foxmail.com" target="_blank" rel="external">peun@foxmail.com</a><br> 模拟按钮hover效果<br> 移动端触摸按钮的效果，可明示用户有些事情正要发生，是一个比较好体验，但是移动设备中并没有鼠标指针，使用css的hover并不能满足我们的需求，还好国外有个激活css的active效果，代码如下，<br> &lt;!DOCTYPE html&gt;<br> <html><br> <head><br> <meta charset="utf-8"><br> <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"><br> <meta content="yes" name="apple-mobile-web-app-capable"><br> <meta content="black" name="apple-mobile-web-app-status-bar-style"><br> <meta content="telephone=no" name="format-detection"><br> <meta content="email=no" name="format-detection"><br> <style type="text/css"><br> a{-webkit-tap-highlight-color: rgba(0,0,0,0);}<br> .btn-blue{display:block;height:42px;line-height:42px;text-align:center;border-radius:4px;font-size:18px;color:#FFFFFF;background-color: #4185F3;}<br> .btn-blue:active{background-color: #357AE8;}<br> </style><br> </head><br> <body></body></html></p>
- <div class="btn-blue">按钮</div>
-
-<p> <script type="text/javascript"><br> document.addEventListener(“touchstart”, function(){}, true)<br> </script><br> <br> <br> 兼容性ios5+、部分android 4+、winphone 8<br> 要做到全兼容的办法，可通过绑定ontouchstart和ontouchend来控制按钮的类名<br> &lt;!DOCTYPE html&gt;<br> <html><br> <head><br> <meta charset="utf-8"><br> <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"><br> <meta content="yes" name="apple-mobile-web-app-capable"><br> <meta content="black" name="apple-mobile-web-app-status-bar-style"><br> <meta content="telephone=no" name="format-detection"><br> <meta content="email=no" name="format-detection"><br> <style type="text/css"><br> a{-webkit-tap-highlight-color: rgba(0,0,0,0);}<br> .btn-blue{display:block;height:42px;line-height:42px;text-align:center;border-radius:4px;font-size:18px;color:#FFFFFF;background-color: #4185F3;}<br> .btn-blue-on{background-color: #357AE8;}<br> </style><br> </head><br> <body></body></html></p>
- <div class="btn-blue">按钮</div>
-
-<p> <script type="text/javascript"><br> var btnBlue = document.querySelector(“.btn-blue”);<br> btnBlue.ontouchstart = function(){<br> this.className = “btn-blue btn-blue-on”<br> }<br> btnBlue.ontouchend = function(){<br> this.className = “btn-blue”<br> }<br> </script><br> <br> <br> 屏幕旋转的事件和样式<br> 事件<br> window.orientation，取值：正负90表示横屏模式、0和180表现为竖屏模式；<br> window.onorientationchange = function(){<br> switch(window.orientation){<br> case -90:<br> case 90:<br> alert(“横屏:” + window.orientation);<br> case 0:<br> case 180:<br> alert(“竖屏:” + window.orientation);<br> break;<br> }<br> }<br> 样式<br> //竖屏时使用的样式<br> @media all and (orientation:portrait) {<br> .css{}<br> }</p>
-<p> //横屏时使用的样式<br> @media all and (orientation:landscape) {<br> .css{}<br> }<br> audio元素和video元素在ios和andriod中无法自动播放<br> 应对方案：触屏即播<br> $(‘html’).one(‘touchstart’,function(){<br> audio.play()<br> })<br> 可参考《无法自动播放的audio元素》<br> 摇一摇功能<br> HTML5 deviceMotion：封装了运动传感器数据的事件，可以获取手机运动状态下的运动加速度等数据。<br> 手机拍照和上传图片<br> <input type="”file”">的accept 属性<br> <!-- 选择照片 --><br> <input type="file" accept="image/*"><br> <!-- 选择视频 --><br> <input type="file" accept="video/*"><br> 使用总结：<br> ios 有拍照、录像、选取本地图片功能<br> 部分android只有选取本地图片功能<br> winphone不支持<br> input控件默认外观丑陋<br> 微信浏览器用户调整字体大小后页面矬了，怎么阻止用户调整<br> 原因<br> android侧是复写了layoutinflater 对textview做了统一处理<br> ios侧是修改了body.style.webkitTextSizeAdjust值<br> 解决方案：<br> android使用以下代码，该接口只在微信浏览器下有效(感谢jationhuang同学提供)<br> /**</p>
-<ul>
-<li>页面加入这段代码可使Android机器页面不再受到用户字体缩放强制改变大小</li>
-<li>但是会有一个1秒左右的延迟，期间可以考虑通过loading展示</li>
-<li>仅供参考<br><em>/<br>(function(){<br>if (typeof(WeixinJSBridge) == “undefined”) {<br>document.addEventListener(“WeixinJSBridgeReady”, function (e) {<br>setTimeout(function(){<br>WeixinJSBridge.invoke(‘setFontSizeCallback’,{“fontSize”:0}, function(res) {<br>alert(JSON.stringify(res));<br>});<br>},0);<br>});<br>} else {<br>setTimeout(function(){<br>WeixinJSBridge.invoke(‘setFontSizeCallback’,{“fontSize”:0}, function(res) {<br>alert(JSON.stringify(res));<br>});<br>},0);<br>}<br>})();<br>ios使用-webkit-text-size-adjust禁止调整字体大小<br>body{-webkit-text-size-adjust: 100%!important;}<br>最好的解决方案：<br>整个页面用rem或者百分比布局<br>消除transition闪屏<br>网络都是这么写的，但我并没有测试出来<br>.css{<br>/</em>设置内嵌的元素在 3D 空间如何呈现：保留 3D<em>/<br>-webkit-transform-style: preserve-3d;<br>/</em>（设置进行转换的元素的背面在面对用户时是否可见：隐藏）<em>/<br>-webkit-backface-visibility: hidden;<br>}<br>开启硬件加速<br>解决页面闪白<br>保证动画流畅<br>.css {<br>-webkit-transform: translate3d(0, 0, 0);<br>-moz-transform: translate3d(0, 0, 0);<br>-ms-transform: translate3d(0, 0, 0);<br>transform: translate3d(0, 0, 0);<br>}<br>参考《用CSS开启硬件加速来提高网站性能》<br>取消input在ios下，输入的时候英文首字母的默认大写<br><input autocapitalize="off" autocorrect="off"><br>android 上去掉语音输入按钮<br>input::-webkit-input-speech-button {display: none}<br>android 2.3 bug<br>@-webkit-keyframes 需要以0%开始100%结束，0%的百分号不能去掉<br>after和before伪类无法使用动画animation<br>border-radius不支持%单位<br>translate百分比的写法和scale在一起会导致失效，例如-webkit-transform: translate(-50%,-50%) scale(-0.5, 1)<br>android 4.x bug<br>三星 Galaxy S4中自带浏览器不支持border-radius缩写<br>同时设置border-radius和背景色的时候，背景色会溢出到圆角以外部分<br>部分手机(如三星)，a链接支持鼠标:visited事件，也就是说链接访问后文字变为紫色<br>android无法同时播放多音频audio<br>参考《border-radius 移动之伤》<br>设计高性能CSS3动画的几个要素<br>尽可能地使用合成属性transform和opacity来设计CSS3动画，不使用position的left和top来定位<br>利用translate3D开启GPU加速<br>参考《High Performance Animations》<br>fixed bug<br>ios下fixed元素容易定位出错，软键盘弹出时，影响fixed元素定位<br>android下fixed表现要比iOS更好，软键盘弹出时，不会影响fixed元素定位<br>ios4下不支持position:fixed<br>解决方案<br>可用isroll.js，暂无完美方案<br>参考<br>《移动端web页面使用position:fixed问题总结》<br>《使用iScroll.js解决ios4下不支持position:fixed的问题》<br>如何阻止windows Phone的默认触摸事件<br>winphone下默认触摸事件事件使用e.preventDefault是无效的<br>目前解决方法是使用样式来禁用<br>html{-ms-touch-action: none;}/</em> 禁止winphone默认触摸事件 */<br>参考<br>《Windows phone 8 touch support》<br>播放视频不全屏<!--
-1.ios7+支持自动播放
-2.支持Airplay的设备（如：音箱、Apple TV)播放
-x-webkit-airplay="true"
-3.播放视频不全屏
-webkit-playsinline="true"
--->
-<video x-webkit-airplay="true" webkit-playsinline="true" preload="auto" autoplay src="http://"></video><br>常用的移动端框架<br>zepto.js<br>语法与jquery几乎一样，会jquery基本会zepto~<br>最新版本已经更新到1.16<br>官网：<a href="http://zeptojs.com/" target="_blank" rel="external">http://zeptojs.com/</a><br>中文(非官网)：<a href="http://www.css88.com/doc/zeptojs_api/" target="_blank" rel="external">http://www.css88.com/doc/zeptojs_api/</a><br>常使用的扩展模块：<br>浏览器检测：<a href="https://github.com/madrobby/zepto/blob/master/src/detect.js" target="_blank" rel="external">https://github.com/madrobby/zepto/blob/master/src/detect.js</a><br>tap事件：<a href="https://github.com/madrobby/zepto/blob/master/src/touch.js" target="_blank" rel="external">https://github.com/madrobby/zepto/blob/master/src/touch.js</a><br>iscroll.js<br>解决页面不支持弹性滚动，不支持fixed引起的问题~<br>实现下拉刷新，滑屏，缩放等功能~<br>最新版本已经更新到5.0<br>官网：<a href="http://cubiq.org/iscroll-5" target="_blank" rel="external">http://cubiq.org/iscroll-5</a><br>underscore.js<br>笔者没用过，不过听说好用，推荐给大家~<br>该库提供了一整套函数式编程的实用功能，但是没有扩展任何JavaScript内置对象。<br>最新版本已经更新到1.8.2<br>官网：<a href="http://underscorejs.org/" target="_blank" rel="external">http://underscorejs.org/</a><br>滑屏框架<br>适合上下滑屏、左右滑屏等滑屏切换页面的效果<br>slip.js<br>iSlider.js<br>fullpage.js<br>flex布局<br>flex布局目前可使用在移动中，并非所有的语法都全兼容，但以下写法笔者实践过，效果良好~<br>/<em> ============================================================<br>flex：定义布局为盒模型<br>flex-v：盒模型垂直布局<br>flex-1：子元素占据剩余的空间<br>flex-align-center：子元素垂直居中<br>flex-pack-center：子元素水平居中<br>flex-pack-justify：子元素两端对齐<br>兼容性：ios 4+、android 2.3+、winphone8+<br>============================================================ </em>/<br>.flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}<br>.flex-v{-webkit-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}<br>.flex-1{-webkit-box-flex:1;-webkit-flex:1;-ms<br>手机自适应js：<br>var dpr, rem, scale;<br>var docEl = document.documentElement;<br>var fontEl = document.createElement(‘style’);<br>var metaEl = document.querySelector(‘meta[name=”viewport”]’);</li>
-</ul>
-<p>dpr = window.devicePixelRatio || 1;<br>rem = docEl.clientWidth * dpr / 10;<br>scale = 1 / dpr;</p>
-<p>// 设置viewport，进行缩放，达到高清效果<br>metaEl.setAttribute(‘content’, ‘width=’ + dpr * docEl.clientWidth + ‘,initial-scale=’ + scale + ‘,maximum-scale=’ + scale + ‘, minimum-scale=’ + scale + ‘,user-scalable=no’);</p>
-<p>// 设置data-dpr属性，留作的css hack之用<br>docEl.setAttribute(‘data-dpr’, dpr);</p>
-<p>// 动态写入样式<br>docEl.firstElementChild.appendChild(fontEl);<br>fontEl.innerHTML = ‘html{font-size:’ + rem + ‘px!important;}’;</p>
-<p>// 给js调用的，某一dpr下rem和px之间的转换函数<br>window.rem2px = function(v) {<br>    v = parseFloat(v);<br>    return v * rem;<br>};<br>window.px2rem = function(v) {<br>    v = parseFloat(v);<br>    return v / rem;<br>};</p>
-<p>window.dpr = dpr;<br>css三角形：</p>
-<p>#triangle-left {<br>    width: 0;<br>    height: 0;<br>    border-top: 50px solid transparent;<br>    border-right: 100px solid red;<br>    border-bottom: 50px solid transparent;<br>}</p>
 ]]></content>
       
         <categories>
@@ -173,97 +69,20 @@ webkit-playsinline="true"
             
             <category> javascript </category>
             
+            <category> 笔记 </category>
+            
+            <category> Professional JavaScript for Web Developers </category>
+            
         </categories>
         
         
         <tags>
-            
-            <tag> 学习 </tag>
             
             <tag> javascript </tag>
             
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[js框架对比]]></title>
-      <url>/2017/09/29/js%E6%A1%86%E6%9E%B6%E5%AF%B9%E6%AF%94/</url>
-      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><div>谢邀，也感谢你对 Vue 的欣赏。<br><br><br>首先，其实 Vue 也完全可以全量赋值的，唯一需要的小优化就是给 v-repeat 列表一个 track-by 属性，提示一下如何判断两个对象是否是同一份数据。如果是没有复杂交互的列表，可以直接 track-by=”$index” 原地复用 DOM 元素。<br><br><br>合理使用 track-by 的情况下，Vue 甚至可以比 React 更快（这里渲染的是 100 * 5 的数据表，每一帧都是全量新数据赋值）：<br><br><a href="//link.zhihu.com/?target=http%3A//vuejs.github.io/js-repaint-perfs/vue/" class=" wrap external" target="_blank" rel="nofollow noreferrer">dbmon (Vue)<i class="icon-external"></i></a><br><br><a href="//link.zhihu.com/?target=http%3A//vuejs.github.io/js-repaint-perfs/react/" class=" wrap external" target="_blank" rel="nofollow noreferrer">dbmon (react)<i class="icon-external"></i></a><br><br><br>在超大量数据的首屏渲染速度上，React 有一定优势，因为 Vue 的渲染机制启动时候要做的工作比较多，而且 React 支持服务端渲染。<br><br><br>需要指出的一点：React 的 Virtual DOM 也不是不需要优化的。复杂的应用里你有两个选择 1. 手动添加 shouldComponentUpdate 来避免不需要的 vdom re-render；2. Components 尽可能都用 pureRenderMixin，然后采用 Flux 结构 + Immutable.js。其实也不是那么简单的。相比之下，Vue 由于采用依赖追踪，默认就是优化状态：你动了多少数据，就触发多少更新，不多也不少。<br><br><br>说起 Flux 架构，FB 提供的标准实现非常繁琐，所以社区的各种造轮子版本层出不穷，目前其实还没有找到一个公认的最佳实践，而且大部分新 Flux 实现都引入了很多函数式概念，你如果对函数式编程不熟悉，光搞清楚那些概念就得花很久。<br><br>如果你真的理解了 Flux，你又会发现其实 Vue 也是可以应用 Flux 架构的。比如<br><a href="//link.zhihu.com/?target=https%3A//github.com/optimizely/nuclear-js" class=" wrap external" target="_blank" rel="nofollow noreferrer">optimizely/nuclear-js · GitHub<i class="icon-external"></i><br></a> 是一个 Flux 变种，他们就是同时把这个东西用在了 React 和 Vue 上面。<br><br>再谈谈开发风格的偏好：React 推荐的做法是 JSX + inline style，也就是把 HTML 和 CSS 全都整进 JavaScript 了。Vue 的默认 API 是以简单易上手为目标，但是进阶之后推荐的是使用 webpack + vue-loader 的单文件组件格式：<br><br><br><img src="https://pic4.zhimg.com/6af17bf9a1a6eadb50d5545313c1db77_b.png" data-rawwidth="829" data-rawheight="1009" class="origin_image zh-lightbox-thumb" width="829" data-original="https://pic4.zhimg.com/6af17bf9a1a6eadb50d5545313c1db77_r.png"><br><br>依然是熟悉的 HTML 和 CSS，但是可以放在一个文件里。<b>而且你还可以使用你想要的预处理器，比如 LESS, Jade, Coffee, Babel，都可以。</b><br><br>然后扯一扯模板 vs. JSX 的问题。JSX 在逻辑表达能力上虽然完爆模板，但是很容易写出凌乱的 render 函数，不如模板看起来一目了然。当然这里也有个人偏好的问题。<br><br><br>React 的社区/组件生态比 Vue 大很多，这个是很显然的。不过说实话我很少见到现成的第三方组件完全符合我的要求。<br><br>最后，使用场景上来说：React 配合严格的 Flux 架构，适合超大规模多人协作的复杂项目。理论上 Vue 配合类似架构也可以胜任这样的用例，但缺少类似 Flux 这样的官方架构。小快灵的项目上，Vue 和 React 的选择更多是开发风格的偏好。对于需要对 DOM 进行很多自定义操作的项目，Vue 的灵活性优于 React。<br><br><br>—<br><br><br>更新：<br><br><br>楼下有些回答说 Vue 的核心是 MVVM 双向绑定，然后就直接跳跃到了『不适合持续工程迭代』的结论。且不说这样的跳跃太草率，这样的看法本身对于双向绑定的理解也是有偏差的。表单的双向绑定，说到底不过是 （value 的单向绑定 + onChange 事件侦听）的一个语法糖，你如果不想用 v-model，像 React 那样处理也是完全可以的。另一方面，组件间的数据传递，Vue 默认是单向的，和 React 一样。<br><br><br><b>React 本身并不存在所谓的『单向数据流』，这完全是 Flux 引入的概念。</b>其核心还是在于避免组件的 local state，强调把 state 抽取出来进行集中的管理。没有 Flux 的情况下 React 一样会有状态难以管理的问题，其根源在于在哪里存放和管理 state，和双向绑定没有本质联系。那难道 Vue 就不能这样管理状态吗？当然是可以的，Vue 现在可以通过<br><a href="//link.zhihu.com/?target=https%3A//github.com/egoist/revue" class=" wrap external" target="_blank" rel="nofollow noreferrer">egoist/revue · GitHub<i class="icon-external"></i><br></a> 和 Redux 进行配合，也可以用 Vue 专属的状态管理架构 Vuex: <a href="//link.zhihu.com/?target=https%3A//github.com/vuejs/vuex/" class=" wrap external" target="_blank" rel="nofollow noreferrer">vuejs/vuex · GitHub<i class="icon-external"></i></a> ，『单向数据流』并没有 React 吹的那么神，直接因为这一点就觉得 Vue 不适合工程迭代，完全站不住脚。<br></div>]]></content>
-      
-        <categories>
+            <tag> notes </tag>
             
-            <category> js </category>
-            
-            <category> 前端 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> js </tag>
-            
-            <tag> 前端 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[js框架之学在当下]]></title>
-      <url>/2017/09/26/js%E6%A1%86%E6%9E%B6%E4%B9%8B%E5%AD%A6%E5%9C%A8%E5%BD%93%E4%B8%8B/</url>
-      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script>]]></content>
-      
-        <categories>
-            
-            <category> javascript框架 </category>
-            
-            <category> js学习 </category>
-            
-        </categories>
-        
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[javascript学习之路]]></title>
-      <url>/2017/09/26/javascript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/</url>
-      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>学习之路</p>
-]]></content>
-      
-        <categories>
-            
-            <category> 学习 </category>
-            
-            <category> javascript </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 学习 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[书籍推荐]]></title>
-      <url>/2017/09/25/%E4%B9%A6%E7%B1%8D%E6%8E%A8%E8%8D%90/</url>
-      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><div><br><p>收藏居然是点赞的3倍！我写了4k多字的评论你们都不点赞，猫心碎成了9瓣……</p><br><p>喵~千呼万唤，小猫终于决定写一篇荐书的文章啦。这次推荐的书涉及管理学、心理学、经济管理，大部分是我读过两遍以上的，有的甚至在家里和办公室各放了一本，方便随时翻阅。</p><br><p>自我提升类的书籍读起来稍微有些枯燥，对有些童鞋来说可能比较困难。不过没关系啦~这些书里面的重要内容，我都会在以后的文章中生动演绎，用尽量通俗易懂的说法让大家看懂哒~</p><br><p>好啦~话不多说，让今天的主角们闪亮登场吧~</p><b>1.《第五项修炼》</b><p></p><img src="https://pic2.zhimg.com/v2-610e0bbc6a238400d530cce99481952d_b.jpg" data-rawwidth="350" data-rawheight="350" class="content_image" width="350"><br><p>这是一本管理学的经典著作，被《金融时报》称为有史以来最伟大的五部工商巨著之一。作者认为，“<b>一个组织能够有长期竞争力的关键是学习能力</b>”，并且提出了打造学习型组织的“五项修炼”——<b>自我超越，心智模式，共同愿景，团队学习，系统思考</b>。其中的“第五项修炼”也就是“系统思考”是其他四项修炼的基础，系统思考的水平也决定了最终的学习效果。</p><br><p>可以说，这是对我影响最大的一本书。“系统思考”教会了我要<b>看清事物的各种关联结构，还要看清各种变化的过程，</b>改变了我看待世界的方式。曾经止步不前的“瓶颈问题”得到了突破，我不再通过拖延逃避学习与工作中的困难。</p><br><p>关于系统思考的详细内容，可以查看公众号【<b>小猫倩倩</b>】的第一篇文章<a href="//link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s/Q6js4RJ1ipFp8rQlIAQDPQ" class=" wrap external" target="_blank" rel="nofollow noreferrer">打开我，这可能是一把改变你人生的钥匙<i class="icon-external"></i></a>。<br><b>后台回复【系统思考】，获取《第五项修炼》的读书笔记~</b><br></p><br><p><b>2.《学会提问》</b></p><img src="https://pic2.zhimg.com/v2-a593fea66f02f62bc84051ecabb20985_b.jpg" data-rawwidth="257" data-rawheight="257" class="content_image" width="257"><p>这本书被誉为批判性思维领域的圣经，<b>它教给我们如何理性地、有逻辑地、批判地，提出、思考、解决问题</b>。批判性思维（critical thinking）的意思并不是“批评”、“找茬”、“唱反调”，而是让我们用一种理性的、辩证的方法来看待问题。随着互联网阅读的普及，我们每天都要阅读大量的信息。一些爆款文章的作者深谙抓住读者眼球的方法，提出各种偏激的、片面的、甚至是煽动性的观点，再佐以一些看似“令人信服”的个例，读者常常会被“牵着鼻子走”。</p><p><br></p><p>如何判断这些信息的真伪呢？这本书会告诉你答案。拥有批判性思维的人，会习惯凡事追问、务求全面周到，判断是有理有节的，态度是追求公正的。</p><br><p><b>3.《学习之道》</b></p><img src="https://pic3.zhimg.com/v2-bd14144a31196028bac4256247400f16_b.jpg" data-rawwidth="257" data-rawheight="257" class="content_image" width="257"><p>作者芭芭拉·奥克利根据脑科学和心理学的最新研究成果，阐述了学习的基本原理，并给出了高效学习的各种方法。这是一本实用性非常强的书，它提供了一些简单有效的学习方法，内容通俗易懂。如果你不太理解书中理论部分的内容也没关系（其实也没多少理论内容），只要按照作者给出的步骤去做就可以了。</p><br><p>书中有许多实用的小tips，为了方便随时翻阅，我在办公室和家里各放了一本。</p><p><br></p><p><b>4.《自控力》</b></p><img src="https://pic2.zhimg.com/v2-9a821860a9a7e94b9d93346045d4a4a9_b.jpg" data-rawwidth="303" data-rawheight="303" class="content_image" width="303"><p>《自控力》的封面上有一句非常诱人的话——<b>只需10周，成功掌控自己的时间和生活</b>。不知道多少人是看到这句话把这本书买回来的——然后就把它束之高阁落灰了。如果你还没有读，可以先听听自己内心的声音：<b>你控制生活的欲望有多强烈？</b>是想继续懒散地过完一生，还是想做一个智慧而上进的人？</p><p><br></p><p>锻炼意志力是一个漫长而艰难困苦的过程，在这个过程中你要和最大的敌人——自己——作斗争。</p><br><p>前段时间有小朋友私信问我人生规划，问我为什么身处安逸的体制依然要努力。<b>不是我不喜欢安逸的生活，只是有更美好的未来在前方等着我。</b></p><br><p>明确的目标是一切成功的关键，也许一路上都充满了荆棘，但当你走到终点的时候，就会感激当时下定决心的自己。</p><br><p>自控力也是同样。如果你没有改变生活的欲望，10个凯莉·麦格尼格尔也救不了你。</p><br><p><b>5.《精力管理》</b></p><img src="https://pic3.zhimg.com/v2-c9d0ff07d49c1c42af10b89fd4da2bd2_b.jpg" data-rawwidth="280" data-rawheight="280" class="content_image" width="280"><br><p>传统的效能提升理论告诉我们要学会管理时间，而新型的理论则告诉我们，“精力管理”才是最重要的。<b>人的“精力”包含四个部分：体能、情感、意志力与思维，所谓“精力管理”，就是要“全情投入”</b>，一心一意地去做某件事。</p><br><p>因为涉及范围比较广，这本书没有把四个方面的精力写的非常深入，建议搭配其他书籍阅读。比如情感精力方面参阅《情商》、《亲密关系》等；意志精力方面参阅《自控力》等；思维精力方面搭配《学习之道》、《金字塔原理》等。</p><br><p><b>6.《情商》系列</b></p><img src="https://pic1.zhimg.com/v2-f0f4e37e8a2a4bb9e99e23e4a0487250_b.jpg" data-rawwidth="283" data-rawheight="283" class="content_image" width="283"><p>很多人对情商有误会。有的人觉得，情商高就是要虚假圆滑；还有的人觉得，情商高就是要讨好所有人。究竟什么才是真正的情商呢？萨洛维与约翰·梅耶给出了“情商”的定义，主要分为五个部分——<b>了解自身情绪、管理情绪、自我激励、识别他人的情绪、处理人际关系</b>。丹尼尔·戈尔曼在《情商》一书中对于这五个部分做出了详细的阐释。</p><p><br></p><p>了解自身情绪，就是能够识别自己的“感受”。在生气的时候认识到“我生气了”（事实上很多人的情绪都是在无意识中发生的）。管理情绪，就是控制负面情绪，摆脱抑郁、焦虑、愤怒等困扰。自我激励就是要“延迟满足”与“抑制冲动”；识别他人的情绪就是“有同理心”、“会看眼色”，这是处理好人际关系的基础。</p><p><br></p><p>《情商》系列总共有6本书，包括《情商》~《情商5》还有《情商实践版》。第一本是解决各种情绪问题的理论基础，第二本侧重于社交情商，第三本是工作情商，第四本是领导情商，第五本则是讲消费习惯、环保意识与生态理念。</p><p><br></p><p><b>《情商》系列是我修习情绪管理的启蒙书</b>。我曾经是一个非常情绪化的人，会因为一点小事把男朋友批评的一无是处；遇到负面情绪时，又沉浸在其中久久不能自拔。在《情商》系列和其他积极心理学著作的帮助下，如今我已成为别人口中“心态很好的人”，人际关系也发生了很大的改变。</p><p><br></p><p>《情商：为什么情商比智商更重要》（情商系列第一本）是少数我读了3遍以上的书之一。</p><p><br></p><p><b>7.《亲密关系》</b></p><img src="https://pic3.zhimg.com/v2-30b31bcaffeb896748693cebde53516e_b.jpg" data-rawwidth="339" data-rawheight="339" class="content_image" width="339"><p>《亲密关系》有两个版本，一个版本是克里斯多福·孟写的，还有一个版本是罗兰·米勒写的。后者主要通过实验数据和实验过程来进行论证，对学术研究不太感兴趣的同学看起来可能有点痛苦，喵这里就只推荐第一个版本。</p><p><br></p><p>这是一本很了不起的书，<b>因为它能真正帮助你改善自己与伴侣或男（女）朋友之间的关系，并且从此免疫朋友圈情感毒鸡汤</b>。作者认为，在亲密关系中，冲突是不可避免的，我们不应当排斥冲突，而要在认识冲突、解决冲突的过程中让亲密关系达到更高的境界。</p><p><br></p><p>亲密关系有四个阶段：月晕、幻灭、内省、启示。第一阶段，每个人看到的都是另一半的优点，两个人如胶似漆，但这种“完美”其实是不真实的，所以叫“月晕”；第二阶段，开始看到对方的缺点，“完美”的形象破灭了，心生遗憾；第三阶段，对方缺点越来越多，很多情侣走到这一步就分手了，但这同时也是自我反省、修炼成熟人格的好时机；第四阶段，接受自己与另一半的不足，共同成长。</p><p><br></p><p>书中给出了一些非常贴近生活的例子，接受我推荐而阅读的好几个小伙伴都感慨“这些例子简直说的就是我”。作者是一位专业的亲密关系咨询专家，不但给出了“心法”，还给出了具体的措施。</p><p><br></p><p>《亲密关系》是一本我读了N遍的“枕边书”，每两三个月就要拿出来翻一遍。</p><p><br></p><p><b>8.《非暴力沟通》</b></p><img src="https://pic3.zhimg.com/v2-e3a2dbb2c8dd7f760225e3474e6ae79a_b.jpg" data-rawwidth="384" data-rawheight="384" class="content_image" width="384"><p><b>读完《亲密关系》和《非暴力沟通》，你会发现和男/女朋友之间90%的问题都能得到理性的解决。</b></p><p><br></p><p>我们时常会在情绪失控时说一些伤害亲人朋友的话，在平时与同事、同学的相处中，也可能因为一些误会口不择言激化矛盾。我从来都认为“心直口快”、“刀子嘴、豆腐心”是在为情商低的人辩解（前面我们说了，情商中很重要的部分就是管理自己的情绪、识别他人的情绪），真正理性而智慧的人会时刻在意自己给别人带来的感受。</p><p><br></p><p>如果说《情商》是“道”，那《非暴力沟通》就是“器”，它会教给我们怎样基于彼此尊重、相互理解的原则进行沟通。</p><p><br></p><p><b>9.《理性情绪》</b></p><img src="https://pic1.zhimg.com/v2-b41051a8c95205c4c7c21f7b946cf6c4_b.jpg" data-rawwidth="257" data-rawheight="257" class="content_image" width="257"><p>接下来要推荐的三本书——《理性情绪》、《认识自己，接纳自己》和《真实的幸福》陪我走过了人生中最灰暗的时光。</p><p><br></p><p>《理性情绪》的作者阿尔伯特·埃利斯被称为“理性情绪行为疗法”之父；《认识自己，接纳自己》和《真实的幸福》两本书的作者马丁·塞利格曼是积极心理学的创始人。这三本书都是写个普通人看，用来克服消极情绪、提升幸福感的经典心理学著作。它们基于一个共同理论：<b>导致坏心情的并不是糟糕的事情本身，而是我们的思维定势。</b>消除愤怒、恐惧、焦虑、抑郁的根本方法是要改变我们“往坏的方面想”的思维定势。</p><p><br></p><p>《理性情绪》告诉我们，要“无条件地接纳自己，无条件地接纳他人，无条件地接纳我们的现实生活”。</p><p><br></p><p><b>10.《认识自己，接纳自己》</b></p><img src="https://pic3.zhimg.com/v2-a1c3a4c8483aac167bf9b916be349ec2_b.jpg" data-rawwidth="350" data-rawheight="350" class="content_image" width="350"><p>《认识自己，接纳自己》告诉我们，人之所以会被负面情绪困扰，是因为没有正确地认识自己。我们身上有些行为特质是能改变的，有些是不能改变的，我们要通过改变能改变的来实现自我提升；要接纳不能改变的，因为这些特质也是我们独一无二的一部分。</p><p><br></p><p><b>11.《真实的幸福》</b></p><img src="https://pic3.zhimg.com/v2-a59d6d99e654a6cb7f00102c5633f2ee_b.jpg" data-rawwidth="338" data-rawheight="338" class="content_image" width="338"><p>《真实的幸福》告诉我们，“真实的幸福在于能够预约、满意、专注地投入到当下的生活。幸福的真谛是在应用突出品格优势的过程中实现自我价值。”</p><p><br></p><p>用心地读完这三本书（事实上我读了塞利格曼“幸福课”系列的5本和埃利斯“理性情绪”系列的6本），你会对生活更少抱怨、更多感恩。世界还是同一个世界，只愿你能被温柔地相待。</p><p><br></p><p><b>12.《富爸爸，穷爸爸》</b></p><img src="https://pic3.zhimg.com/v2-943a64b2ccecb42a49315e6475f66d5e_b.jpg" data-rawwidth="350" data-rawheight="350" class="content_image" width="350"><p><b>这是我认知财富世界的启蒙书。</b>其中对我影响最大的莫过于它的“资产负债”理论——<b>资产就是把钱放入口袋的东西，负债就是把钱拿出口袋的东西</b>。这本书的“好”是有目共睹的，但作为理财教程的争议很大，有人说“富爸爸”是因为本来就有钱才能投资赚更多钱，有的人说他的资产负债观没有考虑到负债的杠杆作用，还有人说它一点都不适合中国国情。</p><p><br></p><p>我很感激这本书，它点燃了我思想的火花。那句“大多数人在努力致富时，总是试图在15cm厚的混凝土上建造帝国大厦”让我下定决心开始系统学习理财知识。之后经过更多的学习与实践，我摆脱了月光，跑赢了通货膨胀，定投指数基金，看公司财报估值买入股票，用价值投资代替投机主义，在股市“七亏两平一盈”中当了那个“一”。</p><p><br></p><p>当然，如果你打心底里对理财投资感兴趣，只看这一本书是远远不够的（你需要系统地学习，需要有圈子交流，在实践中成长）。</p><p><br></p><p><b>13.《穷查理宝典》</b></p><img src="https://pic4.zhimg.com/v2-68301060066e0e28271d72baaa65747f_b.jpg" data-rawwidth="292" data-rawheight="292" class="content_image" width="292"><p>查理·芒格是巴菲特的合伙人，是一位伟大的投资思想家。《穷查理宝典》收录了查理·芒格的人生哲学，主要以公开演讲和媒体访谈的形式呈现，所以看起来稍微有点乱。你需要有相当丰厚的积淀才能完全理解这本书的内容，否则只能形同走马观花地读完。按照《如何阅读一本书》中的分类方法，这本书目前属于“比我层次高很多的书”，我需要成长一段时间再重新拿起来读。</p><p><br></p><p>说说我一点（肤浅的）收获吧。查理·芒格提出了一种非常重要的思维方式，叫做“<b>跨学科攻击</b>”，就是说可以跨越不同领域、整合各个学科知识来解决问题。与“系统思维”强调整体性、发展性类似，而“跨学科攻击”则告诉我们“不要囿于一个专业领域”。其中还提到了“市场先生”和“护城河”理论，由于这两个理论我之前在《巴菲特致股东的信》和《聪明的投资者》中看过了，加上自己也对价值投资有一些理解，这部分看起来稍微顺畅些。其他的虽然知道“句句箴言”，但是因为自己的阅历没有达到相应的层次，读起来比较吃力。</p><p><br></p><p>真的是一本超级棒的书，每当自己读更多的书、在新的领域学到更多知识，再回看《穷查理宝典》，每一次都有不一样的感受。</p><p><br></p><p><b>14.《高效能人士的七个习惯》</b></p><img src="https://pic4.zhimg.com/v2-d971e5dbbc22a2acaf5422fbe9bb173b_b.jpg" data-rawwidth="321" data-rawheight="321" class="content_image" width="321"><p>这是一本赞誉极高的书，被《福布斯》杂志评选为“十本最有影响力的书”之一。<b>人们的问题是普遍存在的，但解决之道一直都建立在永恒而不证自明的原则之上。</b>这本书中列出的七个习惯——“积极主动、以终为始、要事第一、双赢思维、知彼解己、综合统效、不断更新”并非作者首创，但他的诠释会让你重新审视这些浓缩的智慧，最重要的是，他会告诉你怎样“付诸行动”。 </p><p><br></p><p>史蒂芬·柯维首先写的不是“获得成功”而是“塑造性格”，不是建立强大的组织而是提高个人效能。这和我们前面在“系统思维”中提及的“<b>一切解决问题的钥匙都在自己手中</b>”，《亲密关系》中“<b>改变亲密关系要放下立场，而不是对对方有所求</b>”，积极心理学三本中“<b>决定情绪的不是外在事件，而是自身的思维定式</b>”有着共同的出发点。</p><p><br></p><p>你读的书越多，就越觉得世界上的“成功”都是必然的，都是有联系的；在每个领域做出杰出贡献的人，他们底层的能力是相同的。</p><p><br></p><p>读书最重要的不是你记住了多少，能否经久不忘；也不是以“万卷”度量，数量制胜。而是<b>你能否把书中的知识内化、应用，能否用书中的方案解决自身问题，能否举一反三、触类旁通。</b></p><p><br></p><p><b>写了好多，累死喵喵了。别只顾着收藏，记得点个赞呀~</b></p><br><img src="https://pic3.zhimg.com/v2-ceb1f4d5001aaa1a3e8ffb102e4ad916_b.jpg" data-rawwidth="600" data-rawheight="85" class="origin_image zh-lightbox-thumb" width="600" data-original="https://pic3.zhimg.com/v2-ceb1f4d5001aaa1a3e8ffb102e4ad916_r.jpg">欢迎关注公众号「小猫倩倩」（微信号:yqq-lc），后台回复「系统思考」，可以获取《第五项修炼》读书笔记哦～</div>]]></content>
-      
-        <categories>
-            
-            <category> 书 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 读书 </tag>
+            <tag> Professional JavaScript for Web Developers </tag>
             
         </tags>
         
@@ -291,70 +110,6 @@ webkit-playsinline="true"
     </entry>
     
     <entry>
-      <title><![CDATA[给自己的歌]]></title>
-      <url>/2017/09/23/%E7%BB%99%E8%87%AA%E5%B7%B1%E7%9A%84%E6%AD%8C/</url>
-      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>想得却不可得 你奈人生何<br>该舍的舍不得 只顾着跟往事瞎扯<br>等你发现时间是贼了<br>它早已偷光你的选择<br>爱恋不过是一场高烧<br>思念是紧跟着的好不了的咳</p>
-<p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=394618&auto=false&height=66"></iframe><br>是不能原谅却无法阻挡<br>恨意在夜里翻墙<br>是空空荡荡却嗡嗡作响<br>谁在你心里放冷枪<br>旧爱的誓言像极了一个巴掌<br>每当你记起一句就挨一个耳光<br>然后好几年都闻不得 问不得女人香<br>往事并不如烟 是的<br>在爱里念着也不算美德<br>可惜恋爱不像写歌<br>再认真也成不了风格<br>我问你见过思念放过谁呢<br>不管你是累犯或是从无前科<br>我认识的只有那合久的分了<br>没见过分久的合<br>岁月 你别催<br>该来的我不推 该还的还该给的我给<br>岁月 你别催<br>走远的我不追 我不过是想弄清原委<br>谁能告诉我 这是什么呢<br>她的爱在心里 埋葬了 抹平了 几年了<br>仍有余威<br>是不能原谅却无法阻挡<br>爱意在夜里翻墙<br>是空空荡荡却嗡嗡作响<br>谁在你心里放冷枪<br>旧爱的誓言像极了一个巴掌<br>每当你记起一句就挨一个耳光<br>然后好几年都闻不得 问不得女人香<br>然后好几年都闻不得 问不得女人香<br>想得却不可得 你奈人生何<br>想得却不可得 情爱里无智者</p>
-]]></content>
-      
-        <categories>
-            
-            <category> 歌 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> life </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[感觉自己是巨星]]></title>
-      <url>/2017/09/23/%E6%84%9F%E8%A7%89%E8%87%AA%E5%B7%B1%E6%98%AF%E5%B7%A8%E6%98%9F/</url>
-      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>有时候我感觉自己是一个巨星<br>每个人都爱着我有钱又有名<br>所以每当生活让我想死的时候<br>对自己说巨星只是在扮演平民<br>有时候我感觉自己是一个巨星<br>年轻貌美有才华用也用不尽<br>所以当我走到一筹莫展的时候<br>                <img class="photopic full-image" src="http://img1.kuwo.cn/star/starheads/240/80/56/3605461691.jpg"><br>只是巨星需要休息<br>巨星啊巨星我们爱你<br>少了你生活就不能继续<br>为了让粉丝们活下去<br>你要好好照顾自己<br>巨星啊巨星我们支持你<br>支持你做的所有决定<br>大胆做自己别犹豫<br>巨星永远有人气<br>有时候我感觉自己是一个巨星<br>每天各大时尚party出席个不停<br>所以当我偶尔觉得孤单的时候<br>离开人群假装很庆幸<br>巨星啊巨星我们爱你<br>少了你生活就不能继续<br>为了让粉丝们活下去<br>你要好好照顾自己<br>巨星啊巨星我们支持你<br>支持你做的所有决定<br>大胆做自己别犹豫<br>巨星永远有人气<br>希望你也感觉自己是一个巨星<br>这样活着也许就能有点乐趣<br>如果你个人没有很想当巨星<br>想当什么都可以</p>
-]]></content>
-      
-        <categories>
-            
-            <category> 歌 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> life </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[套路]]></title>
-      <url>/2017/09/23/%E5%A5%97%E8%B7%AF/</url>
-      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><blockquote><p>当你开始担心没法迈步<br>只好摆出无所谓的态度<br>金玉其外败絮其中<br>真正的霸气不用外露<br>更不用谁来帮我带路<br>哥们路一直在脚下踩<br>只要我想要的都会有<br>但是从来都不需要老爸买<br>All by myself<br>跟你不同<br>心甘情愿的当个蛀虫<br>我想靠自己的双手赚<br>哪怕有段时间特别穷<br>你说没钱就没朋友<br>那种朋友跟钱走<br>他们只会跟你蹭红酒<br>一旦出事没人会伸援手<br>我早看透<br>真的 homie 穷不走<br>不仅把钱要赚够<br>还要跟我 homie 同富有<br>所以说爱我的恨我的赖我的<br>蹭我的来继续都别停<br>在鱼龙混杂的社会里<br>有时候幽默的就像是卓别林<br>这个年代笑贫不笑娼<br>比较暴力比较黄<br>你只要房子不要窗<br>无神论者开教堂<br>你只想靠天靠地靠朋友<br>靠瞎猫碰上个死老鼠<br>真正牛逼的靠自己<br>别的都是纸老虎<br>都在玩套路<br>你不过就是挖个陷阱<br>小心的跳舞<br>我把我人生跳成电影<br>别再玩套路<br>你把你自己玩进陷阱<br>愉快的跳舞<br>不小心就把人生跳成电影<br>都在玩套路<br>你不过就是挖个陷阱<br>小心的跳舞<br>我把我人生跳成电影<br>别再玩套路<br>你把你自己玩进陷阱<br>愉快的跳舞<br>不小心就把人生跳成电影<br>于是被套路过的人<br>开始原样照搬<br>想要找寻靠山<br>全部都怕落单<br>也跟着玩起套路<br>但是就算你有了靠山<br>也没法告官<br>人际关系还得靠攀<br>明星靠玻尿酸<br>没人怕暴露<br>所以套路离我远一点<br>我比较危险<br>你的把戏会被拆穿<br>最多再给你个鬼脸<br>跟你相比我是个烂演员<br>除了想要赚点钱<br>坦白说我还想把腰杆挺直<br>再痛痛快快的玩几年<br>还记得那时候一无所有<br>常常靠借钱来应付生活<br>睡梦里问上帝还要多久<br>我才能够摆脱这样的生活<br>一直在思考要怎么行动<br>干脆让行动来帮我思考<br>先赚点零用<br>让自己吃饱<br>我发誓要让家人都为我自豪<br>他们看不看得惯<br>小爷都懒得管<br>背后的 bullshit 都随你便<br>地球还得转太多事等着办<br>只会看到更屌的 Jony J<br>所以别再胡说八道<br>在现实里没有人会为你拼<br>等我把想要的都拿到<br>再来写首励志的歌给你听<br>都在玩套路<br>你不过就是挖个陷阱<br>小心的跳舞<br>我把我人生跳成电影<br>别再玩套路<br>你把你自己玩进陷阱<br>愉快的跳舞<br>不小心就把人生跳成电影<br>都在玩套路<br>你不过就是挖个陷阱<br>小心的跳舞<br>我把我人生跳成电影<br>别再玩套路<br>你把你自己玩进陷阱<br>愉快的跳舞<br>不小心就把人生跳成电影</p>
-<footer><strong>[Mr.Gao[</strong><cite>source]] [link] [source_link_title]</cite></footer></blockquote>]]></content>
-      
-        <categories>
-            
-            <category> 歌 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> life 套路 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[神啊，救救我吧]]></title>
       <url>/2017/09/23/%E7%A5%9E%E5%95%8A%EF%BC%8C%E6%95%91%E6%95%91%E6%88%91%E5%90%A7/</url>
       <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><blockquote><p> 上帝会保佑我的爱情总会来的<br> 我在梦中一切都有<br> 可惜现实呀常常是相反的<br> 爱她的男人很多那我又算什么<br> 我在雨中喝着闷酒<br> 反正幸福呀对我是奢侈的<br> 心里太清楚了其实她不爱我<br> 奇怪地球上怎么会没有人看上我<br> 神啊救救我吧一把年纪了<br> 一个爱人都没有孤独是可怜的<br> 如果没爱过人生是黑白的<br> 神啊救救我吧一个人晃了</p>
@@ -371,41 +126,6 @@ webkit-playsinline="true"
         <tags>
             
             <tag> jony j </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[nice]]></title>
-      <url>/2017/09/23/nice/</url>
-      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><blockquote class="blockquote-center">优秀的人，不是不合群，而是他们合群的人里面没有你</blockquote>
-]]></content>
-      
-        
-        <tags>
-            
-            <tag> life </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[巨星不易]]></title>
-      <url>/2017/09/23/%E5%B7%A8%E6%98%9F%E4%B8%8D%E6%98%93/</url>
-      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><div class="RichContent-inner"><br><span class="RichText CopyrightRichText-richText" itemprop="text"><br><p>像我这样的人<br>像你一样的人<br>这世界上有多少人<br>时而迷惘 时而伤神</p><p>小时候听人吹口哨 总认为那是一个人无能却装作很厉害的样子的行径<br>而今 从《消愁》到《像我这样的人》一声声哼唱出的口哨的旋律<br>动听这样的词汇已然无法将其形容 </p><p>那一声口哨响起的时候 <br>泪湿了眼眶</p>我们都是普通人 <br>所以我们庸俗 懦弱 孤单 碌碌无为<br>可我们是普通人<br>所以我们单纯 孤勇 热烈 不甘平凡 奋不顾身</span><!-- react-empty: 3169 --></div>]]></content>
-      
-        <categories>
-            
-            <category> 巨星 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 歌 </tag>
             
         </tags>
         
