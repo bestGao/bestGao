@@ -77,7 +77,7 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="哎哟，不错哦" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="keep running" type="application/atom+xml" />
 
 
 
@@ -89,16 +89,16 @@
 
 
 
-<meta name="description" content="巨星不易，时运不济，命运多舛，生不逢时，怀才不遇，">
+<meta name="description" content="巨星不易，时运不济，命运多舛，生不逢时，怀才不遇，除了努力拼搏，什么都没有！">
 <meta property="og:type" content="website">
-<meta property="og:title" content="哎哟，不错哦">
+<meta property="og:title" content="keep running">
 <meta property="og:url" content="http://yoursite.com/categories/前端/HTML/CSS/JavaScript/React/Redux/Webpack/ndoe-js/index.html">
-<meta property="og:site_name" content="哎哟，不错哦">
-<meta property="og:description" content="巨星不易，时运不济，命运多舛，生不逢时，怀才不遇，">
+<meta property="og:site_name" content="keep running">
+<meta property="og:description" content="巨星不易，时运不济，命运多舛，生不逢时，怀才不遇，除了努力拼搏，什么都没有！">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="哎哟，不错哦">
-<meta name="twitter:description" content="巨星不易，时运不济，命运多舛，生不逢时，怀才不遇，">
+<meta name="twitter:title" content="keep running">
+<meta name="twitter:description" content="巨星不易，时运不济，命运多舛，生不逢时，怀才不遇，除了努力拼搏，什么都没有！">
 
 
 
@@ -108,7 +108,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.2',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":true,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"offset_float":12,"b2t":true,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
@@ -135,7 +135,7 @@
 
 
 
-  <title>分类: ndoe.js | 哎哟，不错哦</title>
+  <title>分类: ndoe.js | keep running</title>
   
 
 
@@ -177,7 +177,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-right ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -188,12 +188,12 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">哎哟，不错哦</span>
+        <span class="site-title">keep running</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <h1 class="site-subtitle" itemprop="description">远走高飞</h1>
+        <h1 class="site-subtitle" itemprop="description">其实，我是一个演员...</h1>
       
   </div>
 
@@ -446,6 +446,8 @@
 
   <aside id="sidebar" class="sidebar">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -520,13 +522,7 @@
               </span>
             
               <span class="links-of-author-item">
-                <a href="mailto:1055652678@qq.com?subject=高" target="_blank" title="E-Mail">
-                  
-                    <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.zhihu.com/people/bu-lai-liao/activities" target="_blank" title="知乎">
+                <a href="https://www.zhihu.com/people/gao5252.github.io/activities" target="_blank" title="知乎">
                   
                     <i class="fa fa-fw fa-globe"></i>知乎</a>
               </span>
@@ -547,27 +543,11 @@
             <ul class="links-of-blogroll-list">
               
                 <li class="links-of-blogroll-item">
-                  <a href="http://www.uisdc.com/" title="优设" target="_blank">优设</a>
+                  <a href="https://www.w3cplus.com/" title="w3cplus" target="_blank">w3cplus</a>
                 </li>
               
                 <li class="links-of-blogroll-item">
-                  <a href="http://www.zhangxinxu.com/" title="张鑫旭" target="_blank">张鑫旭</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://www.alloyteam.com/nav/" title="Web前端导航" target="_blank">Web前端导航</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://www.36zhen.com/t?id=3448" title="前端书籍资料" target="_blank">前端书籍资料</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://ife.baidu.com/" title="百度前端技术学院" target="_blank">百度前端技术学院</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://wf.uisdc.com/cn/" title="google前端开发基础" target="_blank">google前端开发基础</a>
+                  <a href="https://developer.mozilla.org/zh-CN/" title="mdn" target="_blank">mdn</a>
                 </li>
               
             </ul>
@@ -584,6 +564,8 @@
       
         <div class="back-to-top">
           <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
           
         </div>
       
@@ -616,7 +598,7 @@
   &copy;  1994 &mdash; 
   <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-Gao heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">高哥哥</span>
 
