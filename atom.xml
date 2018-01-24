@@ -51,16 +51,28 @@
     <link href="http://yoursite.com/2018/01/23/es6-node-js-mysql/"/>
     <id>http://yoursite.com/2018/01/23/es6-node-js-mysql/</id>
     <published>2018-01-23T12:27:46.000Z</published>
-    <updated>2018-01-24T12:02:54.383Z</updated>
+    <updated>2018-01-24T12:09:31.941Z</updated>
     
     <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h2 id="es6-react-mysql-jade-node-js"><a href="#es6-react-mysql-jade-node-js" class="headerlink" title="es6+react+mysql+jade+node.js"></a>es6+react+mysql+jade+node.js</h2>]]></content>
     
     <summary type="html">
     
-      ndoe.js
+      node.js,react,es6
     
     </summary>
     
+      <category term="node.js" scheme="http://yoursite.com/categories/node-js/"/>
+    
+      <category term="react" scheme="http://yoursite.com/categories/node-js/react/"/>
+    
+      <category term="es6" scheme="http://yoursite.com/categories/node-js/react/es6/"/>
+    
+    
+      <category term="node.js" scheme="http://yoursite.com/tags/node-js/"/>
+    
+      <category term="react" scheme="http://yoursite.com/tags/react/"/>
+    
+      <category term="es6" scheme="http://yoursite.com/tags/es6/"/>
     
   </entry>
   
